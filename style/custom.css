@@ -19,8 +19,15 @@ body {
     margin: 0 auto;
 }
 
-.content-wrap {
+.wrap-1170px {
     width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+    clear: both;
+}
+
+.wrap-1380px {
+    width: 1380px;
     margin: 0 auto;
     overflow: hidden;
     clear: both;
@@ -68,10 +75,17 @@ header button {
     padding: 15px 30px;
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
+    font-weight: 700;
     text-transform: uppercase;
     background-color: white;
+    color: #1b1b1b;
     border: 0px;
     border-radius: 30px; 
+}
+
+header button:hover {
+    background-color: rgb(26, 18, 18);
+    color: white;
 }
 
 /* adding the line under a menu item when :hover */
@@ -102,11 +116,6 @@ header button {
 }
 /* finished adding the line under a menu item when :hover */
 
-header button:hover {
-    background-color: rgb(26, 18, 18);
-    color: white;
-}
-
 .line {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     position: relative;
@@ -114,7 +123,13 @@ header button:hover {
     z-index: auto;
 }
 
-section span {
+section {
+    margin: 0 auto;
+    overflow: hidden;
+    clear: both;
+}
+
+main .wrap-1170px span {
     display: block;
     float: left;
     clear: both;
@@ -123,5 +138,71 @@ section span {
     font-size: 200px;
     color: white;
 }
+
+main section img {
+    display: block;
+    float: left;
+    border: none;
+    position: relative;
+}
+
+main section img:last-of-type {
+    float: right;
+}
+
+main section p {
+    display: block;
+    float: left;
+    padding: 70px 80px;
+    border: none;
+    text-transform: uppercase;
+    color: #fcdb5a;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+main section p span {
+    font-weight: 700;
+}
+
+main section:nth-child(2) {
+    position: relative;
+    z-index: auto;
+}
+
+main section:nth-child(3) p {
+    color: white;
+    font-size: 30px;
+}
+
+main section:nth-child(3) p:first-child {
+    position: absolute;
+    left: 105px;
+    bottom: -350px;
+    z-index: 1;
+}
+
+main section:nth-child(3) p:nth-child(2) {
+    position: absolute;
+    left: 485px;
+    bottom: 20px;
+    z-index: 1;
+}
+
+main section:nth-child(3) p:nth-child(3) {
+    position: absolute;
+    left: 985px;
+    bottom: 20px;
+    z-index: 1;
+}
+
+main section:nth-child(3) p:last-child {
+    position: absolute;
+    left: 870px;
+    bottom: -350px;
+    z-index: 1;
+}
+
 
 
