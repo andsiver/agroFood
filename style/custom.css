@@ -291,6 +291,7 @@ main section:nth-child(3) p span {
 
 
 main section:nth-child(4) {
+    width: 1170px;
     padding-top: 140px;
 }
 
@@ -307,13 +308,45 @@ main section:nth-child(4) p span {
 }
 
 main section:nth-child(4) p:nth-child(2) {
-    color: #bfbfbf;
+    color: rgba(191,191,191, 0.6);
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 23px;
     text-transform: none;
-    padding: 20px 320px;
-    line-height: 45px;
+    padding: 20px 220px;
+    line-height: 35px;
+}
+
+.foodServices {
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.item-wrap {
+    width: 16.65%;
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+main section:nth-child(4) .item-wrap p {
+    margin: 25px 0 0 0;
+    padding: 0;
+    color: #2e2e2e;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: none;
+}
+
+.img-wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+main section:nth-child(4) .img-wrap img {
+    float: none;
+    margin: 0 auto;
 }
 
 
