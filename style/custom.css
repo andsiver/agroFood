@@ -658,7 +658,6 @@ main section:nth-child(9) .wrapper2 .heSaid p {
 main section:nth-child(10) {
     width: 1170px;
     padding-top: 140px;
-    padding-bottom: 130px;
     position: relative;
     z-index: auto;
 }
@@ -781,3 +780,23 @@ main section:nth-child(10) p:nth-child(2) {
 
 /* Section #11 */
 
+main section:nth-child(11) {
+    width: 1170px;
+    padding: 40px 0 130px 40px;
+}
+
+.row3 {
+    overflow: hidden;
+    clear: both;
+    margin: 0 auto;
+}
+
+.row-item3 {
+    float: left;
+    width: 20%;
+}
+
+main section:nth-child(11) .row-item3 img {
+    float: none;
+    margin: 0 auto;
+}
