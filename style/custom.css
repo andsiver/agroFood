@@ -6,6 +6,14 @@
 
 }
 
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroyEB.otf') format('otf'),
+         url('../fonts/gilroyEB.woff2') format('woff2'),
+         url('../fonts/gilroyEB.woff') format('woff');
+
+}
+
 body {
     max-width: 1600px;
     background: white;
@@ -393,6 +401,11 @@ main section:nth-child(5) button {
     padding: 18px 50px;
 }
 
+main section:nth-child(5) button:hover {
+    background-color: rgba(0, 4, 10, 0.7);
+    color: white;
+}
+
 .row {
     overflow: hidden;
     clear: both;
@@ -441,6 +454,80 @@ main section:nth-child(6) .wrap-1170px span {
     line-height: 180px;
 }
 
+/* Section #7 */
+
+main section:nth-child(7) {
+    width: 1170px;
+    padding-top: 140px;
+    padding-bottom: 130px;
+}
+
+main section:nth-child(7) p {
+    float: none;
+    text-align: center;
+    color: #2e2e2e;
+    margin: 0;
+    padding: 0;
+}
+
+main section:nth-child(7) p span {
+    font-weight: 900;
+}
+
+main section:nth-child(7) p:nth-child(2) {
+    color: rgba(191,191,191, 0.6);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+    text-transform: none;
+    padding: 20px 220px;
+    line-height: 35px;
+}
+
+.agroProgress {
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.item-wrap2 {
+    width: 25%;
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+main section:nth-child(7) .item-wrap2 p {
+    float: left;
+    margin: 0px 0 0 25px;
+    padding: 0;
+    color: #2e2e2e;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: none;
+}
+
+main section:nth-child(7) .item-wrap2 p:first-of-type {
+    float: left;
+    margin: 5px 50px 0 25px;
+    padding: 0;
+    color: #2e2e2e;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 50px;
+    text-transform: none;
+}
+
+.img-wrap2 {
+    float: left;
+    width: 50%;
+}
+
+.text-wrap {
+    float: left;
+    width: 50%;
+}
+
+/* Section #8 */
 
 
 
