@@ -14,6 +14,26 @@
 
 }
 
+@font-face {
+	font-family: 'Times New Roman Italic';
+	src: url('../fonts/times_new_roman_italic.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/times_new_roman_italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/times_new_roman_italic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/times_new_roman_italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/times_new_roman_italic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/times_new_roman_italic.svg#times_new_roman_italic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Times New Roman Bold';
+	src: url('../fonts/times_new_roman_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/times_new_roman_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/times_new_roman_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/times_new_roman_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/times_new_roman_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/times_new_roman_bold.svg#times_new_roman_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
 body {
     max-width: 1600px;
     background: white;
@@ -546,4 +566,90 @@ main section:nth-child(7) .item-wrap2 p:first-of-type {
 /* Section #9 */
 
 
+main section:nth-child(9) {
+    width: 1600px;
+    padding: 0 0 149px 0;
+    background-image: url('../img/fourth-bg.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
 
+.wrapper2 {
+    width: 1170px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main section:nth-child(9) p {
+    color: white;
+    line-height: 45px;
+    float: none;
+    margin: 0 auto;
+    padding: 140px 0 20px 0;
+}
+
+main section:nth-child(9) p:nth-child(2) {
+    color: rgba(191,191,191, 0.9);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: none;
+    width: 55%;
+    padding: 0;
+    line-height: 26px;
+}
+
+main section:nth-child(9) p:nth-child(3) {
+    float: left;
+    color: #fcdb5a;
+    font-family: 'Times New Roman Bold', sans-serif;
+    font-size: 100px;
+    text-transform: none;
+    padding: 55px 0 0 0;
+    text-align: left;
+}
+
+main section:nth-child(9) p:nth-child(4) {
+    float: left;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman Italic', cursive;
+    font-size: 25px;
+    text-transform: none;
+    width: 85%;
+    padding: 50px 0 0 50px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.heSaid {
+    overflow: hidden;
+    width: 100%;
+}
+
+.heSaid img:first-of-type {
+    float: left;
+    margin: 45px 20px 30px 100px;
+}
+
+.heSaid img:last-of-type {
+    float: right;
+    margin: 70px 100px 30px 0px;
+}
+
+main section:nth-child(9) .wrapper2 .heSaid p {
+    float: left;
+    color: rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: none;
+    padding: 65px 0 0 0px;
+    line-height: 30px;
+    text-align: left;
+}
+
+
+/* Section #10 */
