@@ -354,8 +354,9 @@ main section:nth-child(4) .img-wrap img {
 
 main section:nth-child(5) {
     width: 1600px;
-    padding-top: 140px;
+    padding: 140px 0;
     background-image: url('../img/second-bg.png');
+    background-color: #f9f9f9;
     background-repeat: no-repeat;
     width: 100%;
     overflow: hidden;
@@ -421,6 +422,25 @@ main section:nth-child(5) .row-item p {
     padding: 0px 35px 0px 40px;
     line-height: 26px;
 }
+
+/* Section #6 */
+
+main section:nth-child(6) {
+    width: 1600px;
+    background-image: url('../img/third-bg.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+main section:nth-child(6) .wrap-1170px span {
+    color: #d8bb90;
+    font-size: 230px;
+    margin: 150px 0 170px 20px;
+    line-height: 180px;
+}
+
 
 
 
