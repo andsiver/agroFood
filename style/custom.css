@@ -41,7 +41,7 @@ body {
 }
 
 .bg-wrap {
-    background-image: url('../img/first-bg.png');
+    background-image: url('../img/bg/first-bg.png');
     background-repeat: no-repeat;
     width: 100%;
     overflow: hidden;
@@ -83,7 +83,7 @@ header nav li {
     margin-right: 25px;
 }
 
-header nav li a, a:visited {
+header .wrap-1170px nav li a, a:visited {
     text-decoration: none;
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -383,7 +383,7 @@ main section:nth-child(4) .img-wrap img {
 main section:nth-child(5) {
     width: 1600px;
     padding: 140px 0;
-    background-image: url('../img/second-bg.png');
+    background-image: url('../img/bg/second-bg.png');
     background-color: #f9f9f9;
     background-repeat: no-repeat;
     width: 100%;
@@ -460,7 +460,7 @@ main section:nth-child(5) .row-item p {
 
 main section:nth-child(6) {
     width: 1600px;
-    background-image: url('../img/third-bg.png');
+    background-image: url('../img/bg/third-bg.png');
     background-repeat: no-repeat;
     width: 100%;
     overflow: hidden;
@@ -569,7 +569,7 @@ main section:nth-child(7) .item-wrap2 p:first-of-type {
 main section:nth-child(9) {
     width: 1600px;
     padding: 0 0 149px 0;
-    background-image: url('../img/fourth-bg.png');
+    background-image: url('../img/bg/fourth-bg.png');
     background-repeat: no-repeat;
     width: 100%;
     overflow: hidden;
@@ -760,21 +760,21 @@ main section:nth-child(10) p:nth-child(2) {
     position: absolute;
     z-index: 2;
     left: 50px;
-    bottom: 225px;
+    bottom: 100px;
 }
 
 .blogTextRow .blogText #second {
     position: absolute;
     z-index: 2;
     left: 440px;
-    bottom: 225px;
+    bottom: 100px;
 }
 
 .blogTextRow .blogText #third{
     position: absolute;
     z-index: 2;
     left: 830px;
-    bottom: 225px;
+    bottom: 100px;
 }
 
 
@@ -799,4 +799,85 @@ main section:nth-child(11) {
 main section:nth-child(11) .row-item3 img {
     float: none;
     margin: 0 auto;
+}
+
+/* Footer */
+
+footer {
+    overflow: hidden;
+    clear: both;
+    background: #2e2e2e;
+}
+
+.footer-wrap {
+    float: left;
+}
+
+.map {
+    float: right;
+}
+
+footer .footer-wrap img {
+    float: left;
+    margin: 80px 160px 0 220px;
+}
+
+footer ul {
+    display: inline-block;
+    float: left;
+    margin-top: 75px;
+}
+
+footer ul:last-of-type {
+    margin-left: 100px;
+}
+
+footer ul li a, a:visited {
+    color: #aaa;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #fff;
+}
+
+/* footer: adding the line under a menu item when :hover*/
+.underline2 a {
+    position: relative;
+    overflow: hidden;
+}
+.underline2 a:after {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    width: 0;
+    top: 23px;
+    background: #fcdb5a;
+    height: 3px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.underline2 a:hover:after,
+.underline2 a:focus:after,
+.underline2 a:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+/* footer: finished adding the line under a menu item when :hover */
+
+.contact {
+    float: left;
+    overflow: hidden;
+    clear: both;
+    margin: 0px 0px 0px 220px;
+}
+
+.contact p {
+    float: left;
 }
