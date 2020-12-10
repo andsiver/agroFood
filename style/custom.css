@@ -653,3 +653,131 @@ main section:nth-child(9) .wrapper2 .heSaid p {
 
 
 /* Section #10 */
+
+
+main section:nth-child(10) {
+    width: 1170px;
+    padding-top: 140px;
+    padding-bottom: 130px;
+    position: relative;
+    z-index: auto;
+}
+
+main section:nth-child(10) p {
+    float: none;
+    text-align: center;
+    color: #2e2e2e;
+    margin: 0;
+    padding: 0;
+}
+
+main section:nth-child(10) p span {
+    font-weight: 900;
+}
+
+main section:nth-child(10) p:nth-child(2) {
+    color: rgba(191,191,191, 0.6);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 23px;
+    text-transform: none;
+    padding: 20px 220px;
+    line-height: 35px;
+}
+
+.blogImgRow {
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    z-index: 1;
+    bottom: 76px;
+}
+
+.blogImg {
+    width: 33.3%;
+    float: left;
+}
+
+.blogDateRow {
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    z-index: 2;
+}
+
+.blogDate {
+    width: 33.3%;
+    float: left;
+}
+
+.blogDateRow .blogDate p {
+    width: 17%;
+    color: #333333;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 25px;
+    background: #fde557;
+    padding: 14px 0;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.blogDateRow .blogDate p span {
+    color: #9a8841;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.blogTextRow {
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+}
+
+.blogText {
+    width: 33.3%;
+    float: left;
+}
+
+.blogTextRow .blogText p {
+    color: #ddc051;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.blogTextRow .blogText p span {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: none;
+}
+
+.blogTextRow .blogText #first {
+    position: absolute;
+    z-index: 2;
+    left: 50px;
+    bottom: 225px;
+}
+
+.blogTextRow .blogText #second {
+    position: absolute;
+    z-index: 2;
+    left: 440px;
+    bottom: 225px;
+}
+
+.blogTextRow .blogText #third{
+    position: absolute;
+    z-index: 2;
+    left: 830px;
+    bottom: 225px;
+}
+
+
+/* Section #11 */
+
