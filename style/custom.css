@@ -527,7 +527,23 @@ main section:nth-child(7) .item-wrap2 p:first-of-type {
     width: 50%;
 }
 
+
 /* Section #8 */
+
+
+.row2 {
+    overflow: hidden;
+    clear: both;
+    margin: 0 auto;
+}
+
+.row-item2 {
+    float: left;
+    width: 25%;
+}
+
+
+/* Section #9 */
 
 
 
