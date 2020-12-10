@@ -392,5 +392,35 @@ main section:nth-child(5) button {
     padding: 18px 50px;
 }
 
+.row {
+    overflow: hidden;
+    clear: both;
+    margin: 0 auto;
+}
+
+.row-item {
+    float: left;
+    width: 25%;
+    background-color: white;
+}
+
+main section:nth-child(5) .row-item h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+    padding: 40px 35px 10px 40px;
+    line-height: 26px;
+}
+
+main section:nth-child(5) .row-item p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(102,102,102, 0.9);
+    padding: 0px 35px 0px 40px;
+    line-height: 26px;
+}
+
 
 
