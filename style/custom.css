@@ -63,7 +63,7 @@ body {
 }
 
 header {
-    overflow: auto;
+    overflow: hidden;
     clear: both;
 }
 
@@ -143,6 +143,7 @@ button:hover {
     right: auto;
     width: 100%;
 }
+
 /* finished adding the line under a menu item when :hover */
 
 .line {
@@ -815,6 +816,7 @@ footer {
 
 .map {
     float: right;
+    overflow: hidden;
 }
 
 footer .footer-wrap img {
@@ -872,12 +874,83 @@ footer ul li a:hover {
 /* footer: finished adding the line under a menu item when :hover */
 
 .contact {
+    width: 670px;
     float: left;
     overflow: hidden;
     clear: both;
-    margin: 0px 0px 0px 220px;
+    margin: 50px 0px 0px 220px;
+    border-bottom: 1px solid rgba(80, 80, 80, 0.7);
 }
 
 .contact p {
     float: left;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 40px;
 }
+
+.contact p:last-of-type {
+    color: #c4c4c4;
+    padding-left: 65px;
+}
+
+.contact p span {
+    color: #feed54;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact .social-medias {
+    overflow: hidden;
+    float: right;
+    padding: 45px 15px 50px 5px;
+}
+
+.contact a {
+    color: #4f4f4f;
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.contact a:hover {
+    color: #ffffff;
+}
+
+.contact a:last-of-type {
+    padding-right: 0px;
+}
+
+.notes {
+    width: 670px;
+    float: left;
+    overflow: hidden;
+    clear: both;
+    margin: 0px 0px 0px 220px;
+    padding: 23px 0 23px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #7e7e7e;
+}
+
+.notes p:first-of-type {
+    float: left;
+}
+
+.notes p:last-of-type {
+    float: right;
+}
+
+.notes p a, a:visited {
+    color: #7e7e7e;
+    text-decoration: none;
+}
+
+.notes a:hover {
+    color: #bbbbbb;
+    text-decoration: none;
+}
+
+
