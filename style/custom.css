@@ -718,7 +718,7 @@ main section:nth-child(10) p:nth-child(2) {
     clear: both;
     position: relative;
     z-index: 1;
-    bottom: 76px;
+    bottom: 77px;
 }
 
 .blogImg {
@@ -832,6 +832,7 @@ main section:nth-child(11) .row-item3 img {
 /* Footer */
 
 footer {
+    width: 1600px;
     overflow: hidden;
     clear: both;
     background: #2e2e2e;
