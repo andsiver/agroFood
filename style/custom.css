@@ -812,13 +812,13 @@ footer {
 }
 
 .footer-wrap {
-    width: 68.75%;
+    width: 989px;
     float: left;
     overflow: hidden;
 }
 
 .map {
-    width: 31.25%;
+    width: 611px;
     float: left;
     overflow: hidden;
 }
@@ -829,7 +829,6 @@ footer .footer-wrap img {
 }
 
 footer ul {
-    display: inline-block;
     float: left;
     margin-top: 75px;
 }
