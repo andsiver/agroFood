@@ -176,10 +176,21 @@ main .wrap-1170px span {
     height: 679px;
 }
 
+.block-one:hover {
+    background: url('/img/sectionTwo/awesomeSweets-alt.png') no-repeat;
+    transition: 1s;
+    color: tomato;
+}
+
 .block-two {
     background: url('/img/sectionTwo/organicFood.png') no-repeat;
     width: 500px;
     height: 310px;
+}
+
+.block-two:hover {
+    background: url('/img/sectionTwo/organicFood-alt.png') center no-repeat;
+    transition: 1s;
 }
 
 .block-three {
@@ -188,16 +199,31 @@ main .wrap-1170px span {
     height: 310px;
 }
 
+.block-three:hover {
+    background: url('/img/sectionTwo/tastyMeat-alt.png') center no-repeat;
+    transition: 1s;
+}
+
 .block-four {
     background: transparent;
     width: 384px;
     height: 369px;
 }
 
+.block-four:hover {
+    background: rgba(255, 30, 0, 0.5);
+    transition: 1s;
+}
+
 .block-five {
     background: url('/img/sectionTwo/juicyFruits.png') no-repeat;
     width: 616px;
     height: 369px;
+}
+
+.block-five:hover {
+    background: url('/img/sectionTwo/juicyFruits-alt.png') no-repeat;
+    transition: 1s;
 }
 
 .block-one, .block-two, .block-three, .block-four, .block-five {
