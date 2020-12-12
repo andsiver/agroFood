@@ -41,8 +41,7 @@ body {
 }
 
 .bg-wrap {
-    background-image: url('../img/bg/first-bg.png');
-    background-repeat: no-repeat;
+    background: url('../img/bg/first-bg.png') no-repeat;
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
@@ -169,26 +168,59 @@ main .wrap-1170px span {
     color: white;
 }
 
-main section img {
-    display: block;
+/* Section #2 */
+
+.block-one {
+    background: url('/img/sectionTwo/awesomeSweets.png') no-repeat;
+    width: 380px;
+    height: 679px;
+}
+
+.block-two {
+    background: url('/img/sectionTwo/organicFood.png') no-repeat;
+    width: 500px;
+    height: 310px;
+}
+
+.block-three {
+    background: url('/img/sectionTwo/tastyMeat.png') no-repeat;
+    width: 500px;
+    height: 310px;
+}
+
+.block-four {
+    background: transparent;
+    width: 384px;
+    height: 369px;
+}
+
+.block-five {
+    background: url('/img/sectionTwo/juicyFruits.png') no-repeat;
+    width: 616px;
+    height: 369px;
+}
+
+.block-one, .block-two, .block-three, .block-four, .block-five {
     float: left;
     border: none;
     position: relative;
 }
 
-main section img:last-of-type {
-    float: right;
+.block-one p, .block-two p, .block-three p, .block-five p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 main section p {
     display: block;
     float: left;
-    padding: 70px 80px;
+    padding: 30px 30px;
     border: none;
     text-transform: uppercase;
-    color: #fcdb5a;
+    color: #ffffff;
     font-family: 'Raleway', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 100;
 }
 
@@ -196,42 +228,11 @@ main section p span {
     font-weight: 700;
 }
 
-main section:nth-child(2) {
-    position: relative;
-    z-index: auto;
-}
-
-main section .img-sign p {
-    color: white;
-    font-size: 30px;
-}
-
-main section .img-sign p:first-child {
-    position: absolute;
-    left: 60px;
-    bottom: -40px;
-    z-index: 1;
-}
-
-main section .img-sign p:nth-child(2) {
-    position: absolute;
-    left: 450px;
-    bottom: 330px;
-    z-index: 1;
-}
-
-main section .img-sign p:nth-child(3) {
-    position: absolute;
-    left: 950px;
-    bottom: 330px;
-    z-index: 1;
-}
-
-main section .img-sign p:last-child {
-    position: absolute;
-    left: 830px;
-    bottom: -40px;
-    z-index: 1;
+.block-four p {
+    color: #fcdb5a;
+    padding: 70px 80px;
+    font-size: 40px;
+    line-height: 50px;
 }
 
 
