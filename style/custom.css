@@ -810,13 +810,13 @@ main section:nth-child(10) p:nth-child(2) {
 
 main section:nth-child(11) {
     width: 1170px;
-    padding: 40px 0 130px 40px;
+    padding: 40px 0 130px 0px;
 }
 
 .row3 {
+    width: 100%;
     overflow: hidden;
     clear: both;
-    margin: 0 auto;
 }
 
 .row-item3 {
@@ -825,7 +825,7 @@ main section:nth-child(11) {
 }
 
 main section:nth-child(11) .row-item3 img {
-    float: none;
+    display: block;
     margin: 0 auto;
 }
 
