@@ -368,7 +368,7 @@ main section:nth-child(4) {
 }
 
 .foodServices {
-    margin: 80px;
+    margin-top: 80px;
     overflow: hidden;
 }
 
