@@ -368,7 +368,7 @@ main section:nth-child(4) {
 }
 
 .foodServices {
-    margin-top: 80px;
+    margin: 80px;
     overflow: hidden;
 }
 
@@ -379,8 +379,8 @@ main section:nth-child(4) {
     text-align: center;
 }
 
-main section:nth-child(4) .item-wrap p {
-    margin: 25px 0 0 0;
+section:nth-child(4) .item-wrap p {
+    margin: 25px 0 5px 0;
     padding: 0;
     color: #2e2e2e;
     font-family: 'Raleway', sans-serif;
@@ -802,7 +802,7 @@ footer ul li a:hover {
 }
 
 .contact-wrap {
-    width: 250px;
+    width: 260px;
     float: left;
     overflow: hidden;
 }
