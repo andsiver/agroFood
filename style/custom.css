@@ -57,6 +57,12 @@ body {
     clear: both;
 }
 
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 /* Text styles */
 
 h1 {
@@ -97,39 +103,32 @@ h3 {
 
 /* Header */
 
-header {
-    overflow: hidden;
-    clear: both;
+header .container {
+    display: flex;
+    justify-content: space-between;
 }
 
 header .logo {
-    float: left;
+    width: 9%;
     position: relative;
     z-index: 1;
 }
 
-header .logo a {
-    display: block;
-    float: left;
-}
-
 header nav {
-    float: left;
-    overflow: hidden;
+    display: flex;
+    width: 78%;
 }
 
 header nav ul {
-    float: left;
-    overflow: hidden;
+    display: flex;
 }
 
 header nav li {
-    float: left;
     padding: 45px 0;
     margin-right: 25px;
 }
 
-header .header-wrap nav li a, a:visited {
+header nav li a, a:visited {
     text-decoration: none;
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -144,8 +143,11 @@ header nav li:first-child {
     margin-left: 60px;
 }
 
-button {
-    float: right;
+.header-button {
+    width: 13%;
+}
+
+.header-button button {
     margin-top: 28px;
     padding: 15px 30px;
     font-family: 'Raleway', sans-serif;
@@ -158,10 +160,19 @@ button {
     border-radius: 30px; 
 }
 
-button:hover {
+.header-button button:hover {
     background-color: rgba(0, 4, 10, 0.7);
     color: white;
-    transition: 1s;
+    transition: 0.5s;
+}
+
+.header-button button:active {
+    box-shadow: 0px 0px 15px #ccc;
+      -moz-box-shadow: 0px 0px 15px #ccc;
+      -webkit-box-shadow: 0px 0px 15px #ccc;
+      -khtml-box-shadow: 0px 0px 15px #ccc;
+    color: white;
+    transition: none;
 }
 
 .line {
@@ -426,17 +437,34 @@ section:nth-child(5) h3 {
     line-height: 20px;
 }
 
-section:nth-child(5) button {
+.discover-button button {
+    overflow: hidden;
     float: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
     background-color: #fcdb5a;
+    color: #1b1b1b;
     margin: 50px 0 110px 0;
     padding: 18px 50px;
+    border: 0px;
+    border-radius: 30px;
 }
 
-section:nth-child(5) button:hover {
+.discover-button button:hover {
     background-color: rgba(0, 4, 10, 0.7);
     color: white;
-    transition: 1s;
+    transition: 0.5s;
+}
+
+.discover-button button:active {
+    box-shadow: 0px 0px 15px #ccc;
+      -moz-box-shadow: 0px 0px 15px #ccc;
+      -webkit-box-shadow: 0px 0px 15px #ccc;
+      -khtml-box-shadow: 0px 0px 15px #ccc;
+    color: white;
+    transition: none;
 }
 
 .row {
