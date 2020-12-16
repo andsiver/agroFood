@@ -1,3 +1,5 @@
+/* Adding Fonts */
+
 @font-face {
     font-family: 'Storytella';
     src: url('../fonts/storytella.otf') format('otf'),
@@ -49,7 +51,7 @@ body {
     margin: 0 auto;
 }
 
-/* Text styles */
+/* General headers and text styles */
 
 h1 {
     font-family: 'Storytella', cursive;
@@ -96,7 +98,9 @@ h3 {
     z-index: auto;
 }
 
+
 /* Header */
+
 
 header .container {
     display: flex;
@@ -174,17 +178,8 @@ header nav li:first-child {
     margin: 200px 0 120px 0;
 }
 
-/* Section #1 */
-
-
-section {
-    margin: 0 auto;
-    overflow: hidden;
-    clear: both;
-}
-
-
 /* Section #1: Agro Awesome */
+
 
 .container-xl {
     width: 1380px;
@@ -221,7 +216,7 @@ section {
 
 .block-two:hover {
     background-position-x: -30px;
-    transition: 1s;
+    transition: 0.3s;
 }
 
 .block-three {
@@ -231,8 +226,8 @@ section {
 }
 
 .block-three:hover {
-    background-position-x: 15px;
-    transition: 1s;
+    background-position-y: 30px;
+    transition: 0.3s;
 }
 
 .block-four {
@@ -351,15 +346,53 @@ section {
     padding-bottom: 130px;
 }
 
+.agro-services_icons_item-wrap .steak {
+    width: 200px; height: 56px;
+    background: url('../img/section-3/icons-sprite.png') -5px 0px;
+}
+
+.agro-services_icons_item-wrap .cereals {
+    width: 200px; height: 56px;
+    background: url('../img/section-3/icons-sprite.png') -205px 0px;
+}
+
+.agro-services_icons_item-wrap .pizza {
+    width: 200px; height: 56px;
+    background: url('../img/section-3/icons-sprite.png') -405px 0px;
+}
+
+.agro-services_icons_item-wrap .vburger {
+    width: 200px; height: 56px;
+    background: url('../img/section-3/icons-sprite.png') -605px 0px;
+}
+
+.agro-services_icons_item-wrap .cupcake {
+    width: 200px; height: 56px;
+    background: url('../img/section-3/icons-sprite.png') -805px 0px;
+}
+
+.agro-services_icons_item-wrap .vegies {
+    width: 200px; height: 56px;
+    background: url('../img/section-3/icons-sprite.png') -1005px 0px;
+}
+
+.steak:hover, .pizza:hover, .cupcake:hover {
+    background-position-y: -62px;
+    transition: 1s;
+}
+
+.cereals:hover, .vburger:hover, .vegies:hover {
+    background-position-y: 60px;
+    transition: 1s;
+}
+
 .agro-services_icons {
+    display: flex;
     margin-top: 80px;
-    overflow: hidden;
 }
 
 .agro-services_icons_item-wrap {
     width: 16.65%;
-    display: block;
-    float: left;
     text-align: center;
 }
 
@@ -373,20 +406,17 @@ section {
     text-transform: none;
 }
 
-.agro-services_icons_item-wrap_img-wrap {
-    width: 100%;
-    overflow: hidden;
-}
-
-.agro-services_icons_item-wrap_img-wrap img {
-    float: none;
-    margin: 0 auto;
-}
 
 /* Section #4: Agro Perfect */
 
+
 .section4_agro-perfect {
     background:  #f9f9f9 url('../img/bg/second-bg.png') center top no-repeat;
+}
+
+.section4_agro-perfect .container {
+    display: flex;
+    flex-direction: column;
 }
 
 .section4_agro-perfect h2 {
@@ -404,8 +434,6 @@ section {
 }
 
 .agro-perfect_btn button {
-    overflow: hidden;
-    float: left;
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
     font-weight: 700;
@@ -434,13 +462,11 @@ section {
 }
 
 .agro-perfect_row {
-    overflow: hidden;
-    clear: both;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .agro-perfect_row-item {
-    float: left;
     width: 25%;
     background-color: white;
 }
@@ -464,14 +490,12 @@ section {
     text-align: left;
 }
 
-        /* Section #4 --Tasty Cakes */
+    /* Tasty Cakes */
 
 .container-xxl {
-    background: url('../img/bg/third-bg.png') no-repeat;
+    background: url('../img/bg/third-bg.png') center top no-repeat;
     width: 1600px;
-    margin: 0 auto;
-} /* General container doesn't fit the section's bg,
-     so using here the widest one possible */
+} /* Container for the new bg */
 
 .agro-perfect_cakes {
     margin-top: 135px;
@@ -484,7 +508,9 @@ section {
     line-height: 180px;
 }
 
+
 /* Section #5: Agro Progress */
+
 
 .section5_agro-progress {
     padding-top: 140px;
@@ -492,19 +518,18 @@ section {
 }
 
 .agro-progress_items {
+    display: flex;
     margin-top: 60px;
-    overflow: hidden;
 }
 
 .agro-progress_items_item-wrap {
     width: 25%;
-    display: block;
-    float: left;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    justify-content: center;
 }
 
 .agro-progress_items_item-wrap p {
-    float: left;
     margin: 5px 0 0 25px;
     padding: 0;
     color: #2e2e2e;
@@ -521,16 +546,12 @@ section {
 }
 
 .agro-progress_items_item-wrap_img-wrap {
-    float: left;
     width: 50%;
-}
-
-.agro-progress_items_item-wrap_img-wrap img {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .agro-progress_items_item-wrap_text-wrap {
-    float: left;
     width: 50%;
 }
 
@@ -539,13 +560,11 @@ section {
 
 
 .imgs-wall_row {
-    overflow: hidden;
-    clear: both;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .imgs-wall_row_item {
-    float: left;
     width: 25%;
 }
 
@@ -557,6 +576,11 @@ section {
     background: url('../img/bg/fourth-bg.png') center top no-repeat;
 }
 
+.section7_feedback .container {
+    display: flex;
+    flex-direction: column;
+}
+
 .section7_feedback h2 {
     padding-top: 140px;
 }
@@ -565,18 +589,19 @@ section {
     color: #b3b3b3;
 }
 
-.feedback_quotation-mark {
-    float: left;
+.feedback_review {
+    display: flex;
+}
+
+.feedback_review-quotation {
     color: #fcdb5a;
     font-family: 'Times New Roman Bold', sans-serif;
     font-size: 100px;
     text-transform: none;
     padding: 25px 0 0 10px;
-    text-align: left;
 }
 
 .feedback_review-text {
-    float: left;
     color: rgb(255, 255, 255);
     font-family: 'Times New Roman Italic', cursive;
     font-size: 25px;
@@ -587,30 +612,35 @@ section {
     text-align: left;
 }
 
-.feedback_review-credentials img:first-of-type {
-    float: left;
+.feedback_credentials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 147px;
+}
+
+.feedback_credentials img:first-of-type {
     margin: 45px 20px 30px 100px;
 }
 
-.feedback_review-credentials img:last-of-type {
-    float: right;
+.feedback_credentials img:last-of-type {
     margin: 70px 100px 30px 0px;
     padding: 0;
 }
 
-.feedback_review-credentials p {
-    float: left;
+.feedback_credentials p {
+    width: 70%;
     color: rgb(255, 255, 255);
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400;
     text-transform: none;
-    padding: 65px 0 195px 0px;
     line-height: 30px;
     text-align: left;
+    padding-top: 15px;
 }
 
-.feedback_review-credentials p span {
+.feedback_credentials p span {
     font-weight: 700;
 }
 
@@ -646,7 +676,6 @@ section {
 .blog_posts_the-post_wrap {
     width: 370px;
     height: 396px;
-    overflow: hidden;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -716,14 +745,14 @@ section {
     text-transform: none;
 }
 
-/* Section #8 // Labels */
+    /* Labels */
 
 .section8_blog .container:after {
     display: block;
     content: " ";
     width: 100%;
     height: 164px;
-    background: url('../img/labels-sprite.png') left top no-repeat;
+    background: url('../img/section-8/labels-sprite.png') left top no-repeat;
     padding-bottom: 110px;
 }
 
@@ -783,12 +812,10 @@ footer ul li a:hover {
 
 .footer_contact p {
     width: 100%;
-    float: left;
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 40px;
-    padding-right: 200px;
 }
 
 .contact-wrap:nth-child(2) p:last-of-type {
@@ -841,6 +868,8 @@ footer ul li a:hover {
     color: #bbbbbb;
     text-decoration: none;
 }
+
+
 
 /* header: adding the line under a menu item when :hover */
 .header-underline {
