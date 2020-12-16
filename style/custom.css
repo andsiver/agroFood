@@ -41,21 +41,7 @@ body {
     margin: 0 auto;
 }
 
-/* Wrappers */
-
-.header-wrap, .section-wrap {
-    width: 1170px;
-    margin: 0 auto;
-    overflow: hidden;
-    clear: both;
-}
-
-.section-big-wrap {
-    width: 1380px;
-    margin: 0 auto;
-    overflow: hidden;
-    clear: both;
-}
+/* General Container */
 
 .container {
     width: 1170px;
@@ -101,6 +87,15 @@ h3 {
     line-height: 25px;
 }
 
+/* Line under the navigation */
+
+.line-under-nav {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    top: 105px;
+    z-index: auto;
+}
+
 /* Header */
 
 header .container {
@@ -108,7 +103,7 @@ header .container {
     justify-content: space-between;
 }
 
-header .logo {
+header .header_logo {
     width: 9%;
     position: relative;
     z-index: 1;
@@ -128,7 +123,7 @@ header nav li {
     margin-right: 25px;
 }
 
-header nav li a, a:visited {
+header nav li a, header nav li a:visited {
     text-decoration: none;
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -143,11 +138,11 @@ header nav li:first-child {
     margin-left: 60px;
 }
 
-.header-button {
+.header_button {
     width: 13%;
 }
 
-.header-button button {
+.header_button button {
     margin-top: 28px;
     padding: 15px 30px;
     font-family: 'Raleway', sans-serif;
@@ -160,13 +155,13 @@ header nav li:first-child {
     border-radius: 30px; 
 }
 
-.header-button button:hover {
+.header_button button:hover {
     background-color: rgba(0, 4, 10, 0.7);
     color: white;
     transition: 0.5s;
 }
 
-.header-button button:active {
+.header_button button:active {
     box-shadow: 0px 0px 15px #ccc;
       -moz-box-shadow: 0px 0px 15px #ccc;
       -webkit-box-shadow: 0px 0px 15px #ccc;
@@ -175,13 +170,9 @@ header nav li:first-child {
     transition: none;
 }
 
-.line {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    position: relative;
-    top: 105px;
-    z-index: auto;
+.header_main-title {
+    margin: 200px 0 120px 0;
 }
-
 
 /* Section #1 */
 
@@ -192,13 +183,15 @@ section {
     clear: both;
 }
 
-section:nth-child(1) h1 {
-    margin: 200px 0 120px 0;
-}
 
+/* Section #1: Agro Awesome */
 
-/* Section #2 */
-
+.container-xl {
+    width: 1380px;
+    padding: 0 10px;
+    margin: 0 auto;
+} /* General container doesn't fit the section's content,
+     so creating here the wider one */
 
 .block-one {
     background: url('../img/sectionTwo/awesomeSweets.png') no-repeat;
@@ -290,52 +283,43 @@ section:nth-child(1) h1 {
 }
 
 
-/* Section #3 */
+/* Section #2: Quality Food */
 
 
-main section:nth-child(3) {
+.section2_quality-food {
     padding-top: 150px;
     position: relative;
     z-index: auto;
 }
 
-main section:nth-child(3) img {
+.section2_quality-food img {
     display: block;
     float: left;
 }
 
-main section:nth-child(3) img:first-of-type {
+.section2_quality-food img:first-of-type {
     padding-top: 40px;
     position: relative;
     z-index: 1;
 }
 
-main section:nth-child(3) img:last-of-type {
+.section2_quality-food img:last-of-type {
     position: absolute;
     z-index: 2;
     right: 610px;
 }
 
-.qualityFood {
-    width: 590px;
-    overflow: hidden;
-    position: absolute;
-    z-index: 3;
-    right: 135px;
-    bottom: 60px;
-}
-
-main section:nth-child(3) p {
+.section2_quality-food p {
     float: left;
     margin: 0;
     padding: 0 10px;
 }
 
-main section:nth-child(3) p:first-child {
+.section2_quality-food p:first-child {
     padding-top: 30px;
 }
 
-main section:nth-child(3) p span {
+.section2_quality-food p span {
     color: rgb(251, 132, 111);
     font-family: 'Storytella', cursive;
     font-size: 100px;
@@ -344,53 +328,62 @@ main section:nth-child(3) p span {
     margin: 0px 35px 0px 0px;
 }
 
-.qualityFood p:nth-child(1) span:nth-child(1) {
+.quality-food_text-wrap {
+    width: 590px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 3;
+    right: 135px;
+    bottom: 60px;
+}
+
+.quality-food_text-wrap p:nth-child(1) span:nth-child(1) {
     color: #fde557;
 }
-.qualityFood p:nth-child(1) span:nth-child(2) {
+.quality-food_text-wrap p:nth-child(1) span:nth-child(2) {
     color: #e5248a;
 }
-.qualityFood p:nth-child(2) span:nth-child(1) {
+.quality-food_text-wrap p:nth-child(2) span:nth-child(1) {
     color: #e5248a;
 }
-.qualityFood p:nth-child(2) span:nth-child(2) {
+.quality-food_text-wrap p:nth-child(2) span:nth-child(2) {
     color: #73b63c;
 }
-.qualityFood p:nth-child(3) span:nth-child(1) {
+.quality-food_text-wrap p:nth-child(3) span:nth-child(1) {
     color: #73b63c;
 }
-.qualityFood p:nth-child(3) span:nth-child(2) {
+.quality-food_text-wrap p:nth-child(3) span:nth-child(2) {
     color: #f7ab32;
 }
-.qualityFood p:nth-child(4) span:nth-child(1) {
+.quality-food_text-wrap p:nth-child(4) span:nth-child(1) {
     color: #f7ab32;
 }
-.qualityFood p:nth-child(4) span:nth-child(2) {
+.quality-food_text-wrap p:nth-child(4) span:nth-child(2) {
     color: #4bbdd5;
 }
 
 
-/* Section #4 */
+/* Section #3: Agro Services */
 
 
-main section:nth-child(4) {
+.section3_agro-services {
     padding-top: 140px;
     padding-bottom: 130px;
 }
 
-.foodServices {
+.agro-services_icons {
     margin-top: 80px;
     overflow: hidden;
 }
 
-.item-wrap {
+.agro-services_icons_item-wrap {
     width: 16.65%;
     display: block;
     float: left;
     text-align: center;
 }
 
-section:nth-child(4) .item-wrap p {
+.agro-services_icons_item-wrap p {
     margin: 25px 0 5px 0;
     padding: 0;
     color: #2e2e2e;
@@ -400,35 +393,28 @@ section:nth-child(4) .item-wrap p {
     text-transform: none;
 }
 
-.img-wrap {
+.agro-services_icons_item-wrap_img-wrap {
     width: 100%;
     overflow: hidden;
 }
 
-section:nth-child(4) .img-wrap img {
+.agro-services_icons_item-wrap_img-wrap img {
     float: none;
     margin: 0 auto;
 }
 
-/* Section #5 */
+/* Section #4: Agro Perfect */
 
-section:nth-child(5) {
-    width: 1600px;
-    padding: 135px 0;
-    background-image: url('../img/bg/second-bg.png');
-    background-color: #f9f9f9;
-    background-repeat: no-repeat;
-    width: 100%;
-    overflow: hidden;
-    margin: 0 auto;
+.section4_agro-perfect {
+    background:  #f9f9f9 url('../img/bg/second-bg.png') no-repeat;
 }
 
-section:nth-child(5) h2 {
+.section4_agro-perfect h2 {
     text-align: left;
-    padding: 0;
+    padding: 135px 0 0 0;
 }
 
-section:nth-child(5) h3 {
+.section4_agro-perfect h3 {
     font-weight: 400;
     font-size: 14px;
     text-align: left;
@@ -437,7 +423,7 @@ section:nth-child(5) h3 {
     line-height: 20px;
 }
 
-.discover-button button {
+.agro-perfect_btn button {
     overflow: hidden;
     float: left;
     font-family: 'Raleway', sans-serif;
@@ -452,13 +438,13 @@ section:nth-child(5) h3 {
     border-radius: 30px;
 }
 
-.discover-button button:hover {
+.agro-perfect_btn button:hover {
     background-color: rgba(0, 4, 10, 0.7);
     color: white;
     transition: 0.5s;
 }
 
-.discover-button button:active {
+.agro-perfect_btn button:active {
     box-shadow: 0px 0px 15px #ccc;
       -moz-box-shadow: 0px 0px 15px #ccc;
       -webkit-box-shadow: 0px 0px 15px #ccc;
@@ -467,19 +453,19 @@ section:nth-child(5) h3 {
     transition: none;
 }
 
-.row {
+.agro-perfect_row {
     overflow: hidden;
     clear: both;
     margin: 0 auto;
 }
 
-.row-item {
+.agro-perfect_row-item {
     float: left;
     width: 25%;
     background-color: white;
 }
 
-section:nth-child(5) .row-item h4 {
+.agro-perfect_row-item h4 {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -488,7 +474,7 @@ section:nth-child(5) .row-item h4 {
     line-height: 26px;
 }
 
-section:nth-child(5) .row-item p {
+.agro-perfect_row-item p {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -498,39 +484,46 @@ section:nth-child(5) .row-item p {
     text-align: left;
 }
 
-/* Section #6 */
+        /* Section #4 --Tasty Cakes */
 
-section:nth-child(6) {
+.container-xxl {
     background: url('../img/bg/third-bg.png') no-repeat;
+    width: 1600px;
+    margin: 0 auto;
+} /* General container doesn't fit the section's bg,
+     so using here the widest one possible */
+
+.agro-perfect_cakes {
+    margin-top: 135px;
 }
 
-section:nth-child(6) h1 {
+.agro-perfect_cakes h1 {
     color: #d8bb90;
     font-size: 230px;
-    margin: 150px 0 170px 20px;
+    padding: 150px 0 170px 20px;
     line-height: 180px;
 }
 
-/* Section #7 */
+/* Section #5: Agro Progress */
 
-main section:nth-child(7) {
+.section5_agro-progress {
     padding-top: 140px;
     padding-bottom: 130px;
 }
 
-.agroProgress {
+.agro-progress_items {
     margin-top: 60px;
     overflow: hidden;
 }
 
-.item-wrap2 {
+.agro-progress_items_item-wrap {
     width: 25%;
     display: block;
     float: left;
     text-align: center;
 }
 
-.item-wrap2 p {
+.agro-progress_items_item-wrap p {
     float: left;
     margin: 5px 0 0 25px;
     padding: 0;
@@ -541,55 +534,58 @@ main section:nth-child(7) {
     text-transform: none;
 }
 
-.item-wrap2 p:first-of-type {
+.agro-progress_items_item-wrap p:first-of-type {
     margin: 5px 50px 0 25px;
     font-family: 'Gilroy', sans-serif;
     font-size: 50px;
 }
 
-.img-wrap2 {
+.agro-progress_items_item-wrap_img-wrap {
     float: left;
     width: 50%;
 }
 
-.img-wrap2 img {
+.agro-progress_items_item-wrap_img-wrap img {
     float: right;
 }
 
-.text-wrap {
+.agro-progress_items_item-wrap_text-wrap {
     float: left;
     width: 50%;
 }
 
 
-/* Section #8 */
+/* Section #6: Imgs Wall */
 
 
-.row2 {
+.imgs-wall_row {
     overflow: hidden;
     clear: both;
     margin: 0 auto;
 }
 
-.row-item2 {
+.imgs-wall_row_item {
     float: left;
     width: 25%;
 }
 
 
-/* Section #9 */
+/* Section #7: Feedback */
 
 
-section:nth-child(9) {
-    padding: 140px 0 149px 0;
+.section7_feedback {
     background: url('../img/bg/fourth-bg.png') no-repeat;
 }
 
-section:nth-child(9) h3 {
+.section7_feedback h2 {
+    padding-top: 140px;
+}
+
+.section7_feedback h3 {
     color: #b3b3b3;
 }
 
-section:nth-child(9) :nth-child(3) {
+.feedback_quotation-mark {
     float: left;
     color: #fcdb5a;
     font-family: 'Times New Roman Bold', sans-serif;
@@ -599,7 +595,7 @@ section:nth-child(9) :nth-child(3) {
     text-align: left;
 }
 
-section:nth-child(9) :nth-child(4) {
+.feedback_review-text {
     float: left;
     color: rgb(255, 255, 255);
     font-family: 'Times New Roman Italic', cursive;
@@ -611,107 +607,116 @@ section:nth-child(9) :nth-child(4) {
     text-align: left;
 }
 
-.heSaid {
-    overflow: hidden;
-    width: 100%;
-}
-
-.heSaid img:first-of-type {
+.feedback_review-credentials img:first-of-type {
     float: left;
     margin: 45px 20px 30px 100px;
 }
 
-.heSaid img:last-of-type {
+.feedback_review-credentials img:last-of-type {
     float: right;
     margin: 70px 100px 30px 0px;
     padding: 0;
 }
 
-.heSaid p {
+.feedback_review-credentials p {
     float: left;
     color: rgb(255, 255, 255);
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400;
     text-transform: none;
-    padding: 65px 0 0 0px;
+    padding: 65px 0 195px 0px;
     line-height: 30px;
     text-align: left;
 }
 
-.heSaid p span {
+.feedback_review-credentials p span {
     font-weight: 700;
 }
 
 
-/* Section #10 */
+/* Section #8: Blog */
 
 
-main section:nth-child(10) {
+.section8_blog h2 {
     padding-top: 120px;
-    position: relative;
-    z-index: auto;
 }
 
-.blogImgRow {
-    width: 100%;
+.section8_blog h3 {
+    padding-bottom: 60px;
+}
+
+.blog_posts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog_posts a, .blog_posts a:visited, .blog_posts a:hover {
+    display: block;
+    text-decoration: none;
+}
+
+.blog_posts_link a:active {
+    display: block;
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.blog_posts_the-post_wrap {
+    width: 370px;
+    height: 396px;
     overflow: hidden;
-    clear: both;
     position: relative;
-    z-index: 1;
-    bottom: 77px;
+    display: flex;
+    flex-direction: column;
 }
 
-.blogImg {
-    width: 33.3%;
-    float: left;
+.blog_posts_the-post:hover {
+    transform: scale(1.01);
 }
 
-.blogDateRow {
+.blog_posts_the-post {
     width: 100%;
-    overflow: hidden;
-    clear: both;
-    position: relative;
-    z-index: 2;
-    margin-top: 70px;
+    height: 100%;
+    transition: all 0.1s;
 }
 
-.blogDate {
-    width: 33.3%;
-    float: left;
+.blog_posts .first {
+    background: url('../img/sectionTen/1.png') center no-repeat;
 }
 
-.blogDateRow .blogDate p {
-    width: 17%;
+.blog_posts .second {
+    background: url('../img/sectionTen/2.png') center no-repeat;
+}
+
+.blog_posts .third {
+    background: url('../img/sectionTen/3.png') center no-repeat;
+}
+
+.blog_posts_the-post_date p {
     color: #333333;
     font-family: 'Gilroy', sans-serif;
     font-size: 25px;
     background: #fde557;
-    padding: 19px 0 0 0;
-    margin-left: 30px;
     text-align: center;
+    padding: 15px 0;
+    margin: 0 280px 0 30px;
 }
 
-.blogDateRow .blogDate p:nth-child(2) {
+.blog_posts_the-post_date p span {
+    display: block;
     color: #9a8841;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 12px;
-    padding: 5px 0 17px 0;
 }
 
-.blogTextRow {
-    width: 100%;
-    overflow: hidden;
-    clear: both;
+.blog_posts_the-post_title {
+    padding: 246px 0 25px 25px;
 }
 
-.blogText {
-    width: 33.3%;
-    float: left;
-}
-
-.blogTextRow .blogText p {
+.blog_posts_the-post_title p span {
+    display: block;
     color: #ddc051;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -721,35 +726,14 @@ main section:nth-child(10) {
     text-transform: uppercase;
 }
 
-.blogTextRow .blogText p:last-child {
+.blog_posts_the-post_title p {
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
+    line-height: 30px;
     text-transform: none;
 }
-
-.blogTextRow .blogText #first {
-    position: absolute;
-    z-index: 2;
-    left: 250px;
-    bottom: 100px;
-}
-
-.blogTextRow .blogText #second {
-    position: absolute;
-    z-index: 2;
-    left: 640px;
-    bottom: 100px;
-}
-
-.blogTextRow .blogText #third{
-    position: absolute;
-    z-index: 2;
-    left: 1030px;
-    bottom: 100px;
-}
-
 
 /* Section #11 */
 
@@ -808,7 +792,7 @@ footer ul:last-of-type {
     margin-left: 100px;
 }
 
-footer ul li a, a:visited {
+footer ul li a, footer ul li a:visited {
     color: #aaa;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -897,19 +881,15 @@ footer ul li a:hover {
     float: right;
 }
 
-.notes p a, a:visited {
+.notes p a, .notes p a:visited {
     color: #7e7e7e;
     text-decoration: none;
 }
 
-.notes a:hover {
+.notes p a:hover {
     color: #bbbbbb;
     text-decoration: none;
 }
-
-
-
-
 
 /* header: adding the line under a menu item when :hover */
 .underline {

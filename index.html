@@ -31,10 +31,10 @@
 </head>
 
 <body> 
-   <div class="line"></div>
+   <div class="line-under-nav"></div>
     <header>
         <div class="container">
-            <div class="logo">
+            <div class="header_logo">
                 <a href="#"><img src="./img/agroFoodLogo.png" alt="Agro Food logo"></a>
             </div>
             <nav>
@@ -47,20 +47,17 @@
                     <li class="underline"><a href="#">Contacts</a></li>
                 </ul>
             </nav>
-            <div class="header-button"><button onclick="alert('You are getting in touch!')">Get&nbsp;in&nbsp;touch</button></div>
+            <div class="header_button"><button onclick="alert('You are getting in touch!')">Get&nbsp;in&nbsp;touch</button></div>
+        </div>
+        <div class="container">            
+            <h1 class="header_main-title"><div>Organic</div><div>Food</div></h1>
         </div>
     </header>
      
     <main>
-  <!--  Section #1 -->
-        <section>
-            <div class="section-wrap">            
-                <h1><div>Organic</div><div>Food</div></h1>
-            </div>
-        </section>
-  <!--  Section #2 -->
-        <section>
-            <div class="section-big-wrap">
+  <!--  Section #1: Agro Awesome -->
+        <section class="section1_agro-awesome">
+            <div class="container-xl">
                 <div class="block-one"><h2>Awesome</h2><h2>sweets</h2></div>
                 <div class="block-two"><h2>Organic</h2><h2>food</h2></div>
                 <div class="block-three"><h2>Tasty</h2><h2>meat</h2></div>
@@ -68,12 +65,12 @@
                 <div class="block-five"><h2>Juicy</h2><h2>fruits</h2></div>
             </div>
         </section>
-  <!--  Section #3 -->
-        <section>
-            <div class="section-wrap">
+  <!--  Section #2: Quality Food -->
+        <section class="section2_quality-food">
+            <div class="container">
                 <img src="./img/sectionThree/qualityFood.png" alt="Quality Food">
                 <img src="./img/sectionThree/qualityFoodFragment.png" alt="Quality Food Fragment">
-                <div class="qualityFood">
+                <div class="quality-food_text-wrap">
                     <p><span>Quality</span><span>food</span></p> 
                     <p><span>is the</span><span>most</span></p>
                     <p><span>important</span><span>thing</span></p> 
@@ -81,45 +78,57 @@
                 </div>
             </div>
         </section>
-  <!--  Section #4 -->
-        <section>
-            <div class="section-wrap">
+  <!--  Section #3: Agro Services -->
+        <section class="section3_agro-services">
+            <div class="container">
                 <h2 class="black"><span>Agro Food</span> Services</h2>
                 <h3>
                   Latin words, combined with a handful of model sentence 
                   structures, to generate Lorem Ipsum which looks reasonable.
                 </h3>
-                <div class="foodServices">
-                    <div class="item-wrap">
-                        <div class="img-wrap"><img src="./img/sectionFour/steak.png" alt="Steak House"></div>
+                <div class="agro-services_icons">
+                    <div class="agro-services_icons_item-wrap">
+                        <div class="agro-services_icons_item-wrap_img-wrap">
+                            <img src="./img/sectionFour/steak.png" alt="Steak House">
+                        </div>
                         <p>Steak House</p>
                     </div>
-                    <div class="item-wrap">
-                        <div class="img-wrap"><img src="./img/sectionFour/cereals.png" alt="Tasty Cereals"></div>
+                    <div class="agro-services_icons_item-wrap">
+                        <div class="agro-services_icons_item-wrap_img-wrap">
+                            <img src="./img/sectionFour/cereals.png" alt="Tasty Cereals">
+                        </div>
                         <p>Tasty Cereals</p>
                     </div>
-                    <div class="item-wrap">
-                        <div class="img-wrap"><img src="./img/sectionFour/pizza.png" alt="Italian Pizza"></div>
+                    <div class="agro-services_icons_item-wrap">
+                        <div class="agro-services_icons_item-wrap_img-wrap">
+                            <img src="./img/sectionFour/pizza.png" alt="Italian Pizza">
+                        </div>
                         <p>Italian Pizza</p>
                     </div>
-                    <div class="item-wrap">
-                        <div class="img-wrap"><img src="./img/sectionFour/vburger.png" alt="Vegeterian Burgers"></div>
+                    <div class="agro-services_icons_item-wrap">
+                        <div class="agro-services_icons_item-wrap_img-wrap">
+                            <img src="./img/sectionFour/vburger.png" alt="Vegeterian Burgers">
+                        </div>
                         <p>Vegeterian Burgers</p>
                     </div>
-                    <div class="item-wrap">
-                        <div class="img-wrap"><img src="./img/sectionFour/cupcake.png" alt="Awesome Cupcake"></div>
+                    <div class="agro-services_icons_item-wrap">
+                        <div class="agro-services_icons_item-wrap_img-wrap">
+                            <img src="./img/sectionFour/cupcake.png" alt="Awesome Cupcake">
+                        </div>
                         <p>Awesome Cupcake</p>
                     </div>
-                    <div class="item-wrap">
-                        <div class="img-wrap"><img src="./img/sectionFour/vegies.png" alt="Vegetables"></div>
+                    <div class="agro-services_icons_item-wrap">
+                        <div class="agro-services_icons_item-wrap_img-wrap">
+                            <img src="./img/sectionFour/vegies.png" alt="Vegetables">
+                        </div>
                         <p>Vegetables</p>
                     </div>
                 </div>
             </div>
         </section>
-  <!--  Section #5 -->
-        <section>
-          <div class="section-wrap">
+  <!--  Section #4: Agro Perfect -->
+        <section class="section4_agro-perfect">
+          <div class="container">
             <h2><span>Agro perfect</span><div>food for you</div></h2>
             <h3>
                 Latin words, combined with a handful of model sentence structures, 
@@ -129,72 +138,72 @@
                 Ipsum is not simply random text. It has roots in a piece of classical 
                 Latin literature from 45 BC, making it over 2000 years old.
             </h3>
-            <div class="discover-button"><button onclick="alert('You are discovering now!')">Discover</button></div>
-            <div class="row">
-                <div class="row-item"><img src="./img/sectionFive/1.png" alt="Image with food depictured"></div>
-                <div class="row-item">
+            <div class="agro-perfect_btn"><button onclick="alert('You are discovering now!')">Discover</button></div>
+            <div class="agro-perfect_row">
+                <div class="agro-perfect_row-item"><img src="./img/sectionFive/1.png" alt="Image with food depictured"></div>
+                <div class="agro-perfect_row-item">
                     <h4><div>Health Benefits</div><div>of a Raw Food</div></h4>
                     <p>Dogfish shark, bango hog sucker, baikal oilfish, eeltail catfish regal whiptail catfish; squarehead cat.</p>
                 </div>
-                <div class="row-item"><img src="./img/sectionFive/2.png" alt="Image with food depictured"></div>
-                <div class="row-item">
+                <div class="agro-perfect_row-item"><img src="./img/sectionFive/2.png" alt="Image with food depictured"></div>
+                <div class="agro-perfect_row-item">
                     <h4><div>Tips for Ripening</div><div>your Fruit</div></h4>
                     <p>The generated Lorem Ipsum is therefore always free from repe- tition injected humour, or</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="row-item">
+            <div class="agro-perfect_row">
+                <div class="agro-perfect_row-item">
                     <h4><div>Superfoods you should</div><div>be eating</div></h4>
                     <p>The generated Lorem Ipsum is therefore always free from repe- tition injected humour, or</p>
                 </div>
-                <div class="row-item"><img src="./img/sectionFive/3.png" alt="Image with food depictured"></div>
-                <div class="row-item">
+                <div class="agro-perfect_row-item"><img src="./img/sectionFive/3.png" alt="Image with food depictured"></div>
+                <div class="agro-perfect_row-item">
                     <h4><div>Grunt torrent catfish</div><div>squaretail Norwegian</div><div>Atlantic salmon</div></h4>
                     <p>Northern clingfish searobin betta blue shark. Jackfish leopard</p>
                 </div>
-                <div class="row-item"><img src="./img/sectionFive/4.png" alt="Image with food depictured"></div>
+                <div class="agro-perfect_row-item"><img src="./img/sectionFive/4.png" alt="Image with food depictured"></div>
+            </div>
+          </div>
+          <div class="container-xxl">
+            <div class="container agro-perfect_cakes">
+                <h1><div>Tasty</div><div>Cakes</div></h1>
             </div>
           </div>
         </section>
-  <!--  Section #6 -->
-        <section>
-            <div class="section-wrap">
-                <h1><div>Tasty</div><div>Cakes</div></h1>
-            </div>
-        </section>
-  <!--  Section #7 -->  
-        <section>
-            <div class="section-wrap">
+  
+  <!--  Section #5: Agro Progress -->  
+        <section class="section5_agro-progress">
+            <div class="container">
                 <h2 class="black"><span>Agro</span> Progress</h2>
                 <h3>
                     Latin words, combined with a handful of model sentence 
                     structures, to generate Lorem Ipsum which looks reasonable.
                 </h3>
-                <div class="agroProgress">
-                    <div class="item-wrap2">
-                        <div class="img-wrap2"><img src="./img/sectionSeven/1.png" alt="Muffin Icon"></div>
-                        <div class="text-wrap">
+                <div class="agro-progress_items">
+                    <div class="agro-progress_items_item-wrap">
+                        <div class="agro-progress_items_item-wrap_img-wrap"><img src="./img/sectionSeven/1.png" alt="Muffin Icon"></div>
+                        <div class="agro-progress_items_item-wrap_text-wrap">
                             <p>350</p>
                             <p>Muffins</p>
                         </div>
                     </div>
-                    <div class="item-wrap2">
-                        <div class="img-wrap2"><img src="./img/sectionSeven/2.png" alt="Cake Icon"></div>
-                        <div class="text-wrap">
+                    <div class="agro-progress_items_item-wrap">
+                        <div class="agro-progress_items_item-wrap_img-wrap"><img src="./img/sectionSeven/2.png" alt="Cake Icon"></div>
+                        <div class="agro-progress_items_item-wrap_text-wrap">
                             <p>158</p>
                             <p>Cakes</p>
                         </div>
                     </div>
-                    <div class="item-wrap2">
-                        <div class="img-wrap2"><img src="./img/sectionSeven/3.png" alt="Cupcake Icon"></div>
-                        <div class="text-wrap">
+                    <div class="agro-progress_items_item-wrap">
+                        <div class="agro-progress_items_item-wrap_img-wrap"><img src="./img/sectionSeven/3.png" alt="Cupcake Icon"></div>
+                        <div class="agro-progress_items_item-wrap_text-wrap">
                             <p>500+</p>
                             <p>Cupcakes</p>
                         </div>
                     </div>
-                    <div class="item-wrap2">
-                        <div class="img-wrap2"><img src="./img/sectionSeven/4.png" alt="Doughnut Icon"></div>
-                        <div class="text-wrap">
+                    <div class="agro-progress_items_item-wrap">
+                        <div class="agro-progress_items_item-wrap_img-wrap"><img src="./img/sectionSeven/4.png" alt="Doughnut Icon"></div>
+                        <div class="agro-progress_items_item-wrap_text-wrap">
                             <p>685</p>
                             <p>Doughnut</p>
                         </div>
@@ -202,83 +211,85 @@
                 </div>
             </div>
         </section>
-  <!--  Section #8 -->    
-        <section>
-            <div class="row2">
-                <div class="row-item2"><img src="./img/sectionEight/1.png" alt="Image with food depictured"></div>
-                <div class="row-item2"><img src="./img/sectionEight/2.png" alt="Image with food depictured"></div>
-                <div class="row-item2"><img src="./img/sectionEight/3.png" alt="Image with food depictured"></div>
-                <div class="row-item2"><img src="./img/sectionEight/4.png" alt="Image with food depictured"></div>
+  <!--  Section #6: Imgs Wall -->  
+        <section class="section6_imgs-wall">
+            <div class="imgs-wall_row">
+                <div class="imgs-wall_row_item"><img src="./img/sectionEight/1.png" alt="Image with food depictured"></div>
+                <div class="imgs-wall_row_item"><img src="./img/sectionEight/2.png" alt="Image with food depictured"></div>
+                <div class="imgs-wall_row_item"><img src="./img/sectionEight/3.png" alt="Image with food depictured"></div>
+                <div class="imgs-wall_row_item"><img src="./img/sectionEight/4.png" alt="Image with food depictured"></div>
             </div>
-            <div class="row2">
-                <div class="row-item2"><img src="./img/sectionEight/5.png" alt="Image with food depictured"></div>
-                <div class="row-item2"><img src="./img/sectionEight/6.png" alt="Image with food depictured"></div>
-                <div class="row-item2"><img src="./img/sectionEight/7.png" alt="Image with food depictured"></div>
-                <div class="row-item2"><img src="./img/sectionEight/8.png" alt="Image with food depictured"></div>
+            <div class="imgs-wall_row">
+                <div class="imgs-wall_row_item"><img src="./img/sectionEight/5.png" alt="Image with food depictured"></div>
+                <div class="imgs-wall_row_item"><img src="./img/sectionEight/6.png" alt="Image with food depictured"></div>
+                <div class="imgs-wall_row_item"><img src="./img/sectionEight/7.png" alt="Image with food depictured"></div>
+                <div class="imgs-wall_row_item"><img src="./img/sectionEight/8.png" alt="Image with food depictured"></div>
             </div>
         </section>  
-  <!--  Section #9 -->
-        <section>
-            <div class="section-wrap">
+  <!--  Section #7: Feedback -->
+        <section class="section7_feedback">
+            <div class="container">
                 <h2><span>People says</span> about Agro</h2>
                 <h3>Latin words, combined with a handful of model sentence structures, 
                    to generate Lorem Ipsum which looks reasonable.</h3>
-                <p>“</p>
-                <p>Latin words, combined with a handful of model sentence structures, to generate 
+                <p class="feedback_quotation-mark">“</p>
+                <p class="feedback_review-text">Latin words, combined with a handful of model sentence structures, to generate 
                    Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always 
                    free from repetition injected humour, or non-characteristic words etc.  Contrary 
                    to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece 
                    of classical Latin literature from 45 BC, making it over</p>
-                <div class="heSaid">
+                <div class="feedback_review-credentials">
                     <img src="./img/sectionNine/heSaid.png" alt="Photo of a Man">
                     <p><span>Terens Smith</span>/CEO AntalAgro</p>
                     <img src="./img/sectionNine/navigate.png" alt="Navigation Status Image">
                 </div>
             </div>
         </section>
-  <!--  Section #10 -->
-        <section>
-            <div class="section-wrap">
+  <!--  Section #8: Blog -->
+        <section class="section8_blog">
+            <div class="container">
                 <h2 class="black"><span>Blog</span> Posts</h2>
                 <h3>
                    Latin words, combined with a handful of model sentence 
                    structures, to generate Lorem Ipsum which looks reasonable.
                 </h3>
-                <div class="blogDateRow">
-                    <div class="blogDate">
-                        <p>07</p><p>Nov</p>
+                <div class="blog_posts">
+                  <a href="#">
+                    <div class="blog_posts_the-post_wrap">
+                    <div class="blog_posts_the-post first">
+                        <div class="blog_posts_the-post_date"><p>07<span>Nov</span></p></div>
+                        <div class="blog_posts_the-post_title">
+                            <p><span>Organic food/tips & guides</span>Tips for Ripening your Fruit</p>
+                        </div>   
                     </div>
-                    <div class="blogDate">
-                        <p>03</p><p>Nov</p>
                     </div>
-                    <div class="blogDate">
-                        <p>25</p><p>Nov</p>
+                  </a>
+                  <a href="#"> 
+                    <div class="blog_posts_the-post_wrap">
+                    <div class="blog_posts_the-post second">
+                        <div class="blog_posts_the-post_date"><p>03<span>Nov</span></p></div>
+                        <div class="blog_posts_the-post_title">
+                            <p><span>Diet/organic food</span>Health Benefits of a Raw Food</p>
+                        </div>
                     </div>
-                </div>
-                <div class="blogImgRow">
-                    <div class="blogImg"><img src="./img/sectionTen/1.png" alt="Blog Image"></div>
-                    <div class="blogImg"><img src="./img/sectionTen/2.png" alt="Blog Image"></div>
-                    <div class="blogImg"><img src="./img/sectionTen/3.png" alt="Blog Image"></div>
-                </div>
-                <div class="blogTextRow">
-                    <div class="blogText">
-                        <div id="first"><p>Organic food/tips & guides</p>
-                        <p>Tips for Ripening your Fruit</p></div>
                     </div>
-                    <div class="blogText">
-                        <div id="second"><p>Diet/organic food</p>
-                        <p>Health Benefits of a Raw Food</p></div>
+                  </a>
+                  <a href="#">
+                    <div class="blog_posts_the-post_wrap">
+                    <div class="blog_posts_the-post third">
+                        <div class="blog_posts_the-post_date"><p>25<span>Nov</span></p></div>
+                        <div class="blog_posts_the-post_title">
+                            <p><span>Diet/organic food</span>Superfoods you should be eating</p>
+                        </div>
                     </div>
-                    <div class="blogText">
-                        <div id="third"><p>Diet/organic food</p>
-                        <p>Superfoods you should be eating</p></div>
                     </div>
+                  </a>
                 </div>
             </div>
         </section>
   <!--  Section #11 -->
         <section>
-            <div class="section-wrap">
+            <div class="container">
                 <div class="row3">
                     <div class="row-item3"><img src="./img/sectionEleven/1.png" alt="Company Label"></div>
                     <div class="row-item3"><img src="./img/sectionEleven/2.png" alt="Company Label"></div>
