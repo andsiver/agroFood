@@ -193,37 +193,45 @@ section {
 } /* General container doesn't fit the section's content,
      so creating here the wider one */
 
+.section-1_agro-awesome .container-xl {
+    display: flex;
+}
+
+.agro-awesome_second-part {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .block-one {
-    background: url('../img/sectionTwo/awesomeSweets.png') no-repeat;
+    background: url('../img/section-1/awesomeSweets.png') no-repeat;
     width: 380px;
     height: 679px;
 }
 
 .block-one:hover {
-    background: url('../img/sectionTwo/awesomeSweets-alt.png') no-repeat;
+    background-position-x: -380px;
     transition: 1s;
-    color: tomato;
 }
 
 .block-two {
-    background: url('../img/sectionTwo/organicFood.png') no-repeat;
+    background: url('../img/section-1/organicFood.png') no-repeat;
     width: 500px;
     height: 310px;
 }
 
 .block-two:hover {
-    background: url('../img/sectionTwo/organicFood-alt.png') center no-repeat;
+    background-position-x: -30px;
     transition: 1s;
 }
 
 .block-three {
-    background: url('../img/sectionTwo/tastyMeat.png') no-repeat;
+    background: url('../img/section-1/tastyMeat.png') no-repeat;
     width: 500px;
     height: 310px;
 }
 
 .block-three:hover {
-    background: url('../img/sectionTwo/tastyMeat-alt.png') center no-repeat;
+    background-position-x: 15px;
     transition: 1s;
 }
 
@@ -233,24 +241,18 @@ section {
     height: 369px;
 }
 
-.block-four:hover {
-    background: rgba(255, 30, 0, 0.5);
-    transition: 1s;
-}
-
 .block-five {
-    background: url('../img/sectionTwo/juicyFruits.png') no-repeat;
+    background: url('../img/section-1/juicyFruits.png') no-repeat;
     width: 616px;
     height: 369px;
 }
 
 .block-five:hover {
-    background: url('../img/sectionTwo/juicyFruits-alt.png') no-repeat;
+    background-position-y: -369px;
     transition: 1s;
 }
 
 .block-one, .block-two, .block-three, .block-four, .block-five {
-    float: left;
     border: none;
     position: relative;
 }
@@ -288,35 +290,14 @@ section {
 
 .section2_quality-food {
     padding-top: 150px;
-    position: relative;
-    z-index: auto;
 }
 
-.section2_quality-food img {
-    display: block;
-    float: left;
-}
-
-.section2_quality-food img:first-of-type {
-    padding-top: 40px;
-    position: relative;
-    z-index: 1;
-}
-
-.section2_quality-food img:last-of-type {
-    position: absolute;
-    z-index: 2;
-    right: 610px;
-}
-
-.section2_quality-food p {
-    float: left;
-    margin: 0;
-    padding: 0 10px;
-}
-
-.section2_quality-food p:first-child {
-    padding-top: 30px;
+.section2_quality-food .container {
+    background-image: url('../img/section-2/qualityFoodFragment.png'), url('../img/section-2/qualityFood.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 445px 0px, 15px 40px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .section2_quality-food p span {
@@ -325,16 +306,15 @@ section {
     font-size: 100px;
     font-weight: 400;
     text-transform: none;
-    margin: 0px 35px 0px 0px;
+    margin-right: 35px;
 }
 
 .quality-food_text-wrap {
-    width: 590px;
-    overflow: hidden;
-    position: absolute;
-    z-index: 3;
-    right: 135px;
-    bottom: 60px;
+    padding: 70px 0 65px 10px;
+}
+
+.section2_quality-food p:nth-child(3) span:nth-child(2) {
+    margin-right: 0px;
 }
 
 .quality-food_text-wrap p:nth-child(1) span:nth-child(1) {
@@ -406,7 +386,7 @@ section {
 /* Section #4: Agro Perfect */
 
 .section4_agro-perfect {
-    background:  #f9f9f9 url('../img/bg/second-bg.png') no-repeat;
+    background:  #f9f9f9 url('../img/bg/second-bg.png') center top no-repeat;
 }
 
 .section4_agro-perfect h2 {
@@ -574,7 +554,7 @@ section {
 
 
 .section7_feedback {
-    background: url('../img/bg/fourth-bg.png') no-repeat;
+    background: url('../img/bg/fourth-bg.png') center top no-repeat;
 }
 
 .section7_feedback h2 {
@@ -683,15 +663,15 @@ section {
 }
 
 .blog_posts .first {
-    background: url('../img/sectionTen/1.png') center no-repeat;
+    background: url('../img/section-8/1.png') center no-repeat;
 }
 
 .blog_posts .second {
-    background: url('../img/sectionTen/2.png') center no-repeat;
+    background: url('../img/section-8/2.png') center no-repeat;
 }
 
 .blog_posts .third {
-    background: url('../img/sectionTen/3.png') center no-repeat;
+    background: url('../img/section-8/3.png') center no-repeat;
 }
 
 .blog_posts_the-post_date p {
@@ -758,7 +738,7 @@ footer .container {
     flex-direction: column
 }
 
-.footer-nav-row {
+.footer_nav {
     width: 60%;
     display: flex;
     justify-content: left;
@@ -785,7 +765,7 @@ footer ul li a:hover {
     color: #fff;
 }
 
-.footer-contact-row {
+.footer_contact {
     width: 60%;
     display: flex;
     justify-content: space-between;
@@ -801,7 +781,7 @@ footer ul li a:hover {
     width: 43%;
 }
 
-.footer-contact-row p {
+.footer_contact p {
     width: 100%;
     float: left;
     color: #ffffff;
@@ -815,7 +795,7 @@ footer ul li a:hover {
     color: #c4c4c4;
 }
 
-.footer-contact-row p span {
+.footer_contact p span {
     color: #feed54;
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
@@ -823,40 +803,41 @@ footer ul li a:hover {
     text-transform: uppercase;
 }
 
-.footer-contact-row .social-medias {
+.footer_contact .social-medias {
     padding: 45px 15px 50px 5px;
 }
 
-.footer-contact-row a {
+.footer_contact a {
     color: #4f4f4f;
     font-size: 25px;
     padding-right: 10px;
 }
 
-.footer-contact-row a:hover {
+.footer_contact a:hover {
     color: #ffffff;
+    transition: 0.3s;
 }
 
-.footer-contact-row a:last-of-type {
+.footer_contact a:last-of-type {
     padding-right: 0px;
 }
 
-.footer-notes-row {
+.footer_bottomline {
     width: 60%;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     padding: 23px 0 23px 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #7e7e7e;
 }
 
-.footer-notes-row p a, .notes p a:visited {
+.footer_bottomline p a, .notes p a:visited {
     color: #7e7e7e;
     text-decoration: none;
 }
 
-.footer-notes-row p a:hover {
+.footer_bottomline p a:hover {
     color: #bbbbbb;
     text-decoration: none;
 }
