@@ -649,6 +649,7 @@ section {
 .blog_posts {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 100px;
 }
 
 .blog_posts a, .blog_posts a:visited, .blog_posts a:hover {
@@ -735,57 +736,37 @@ section {
     text-transform: none;
 }
 
-/* Section #11 */
+/* Section #8 // Labels */
 
-main section:nth-child(11) {
-    padding: 40px 0 130px 0px;
-}
-
-.row3 {
-    width: 100%;
-    overflow: hidden;
-    clear: both;
-}
-
-.row-item3 {
-    float: left;
-    width: 20%;
-}
-
-main section:nth-child(11) .row-item3 img {
+.section8_blog .container:after {
     display: block;
-    margin: 0 auto;
+    content: " ";
+    width: 100%;
+    height: 164px;
+    background: url('../img/labels-sprite.png') left top no-repeat;
+    padding-bottom: 110px;
 }
 
 /* Footer */
 
 footer {
-    width: 1600px;
-    overflow: hidden;
-    clear: both;
-    background: #2e2e2e;
+    background: #2e2e2e url('../img/footer/map.png') right top no-repeat;
 }
 
-.footer-wrap {
-    width: 989px;
-    float: left;
-    overflow: hidden;
+footer .container {
+    display: flex;
+    flex-direction: column
 }
 
-.map {
-    width: 611px;
-    float: left;
-    overflow: hidden;
+.footer-nav-row {
+    width: 60%;
+    display: flex;
+    justify-content: left;
+    padding-top: 70px;
 }
 
-footer .footer-wrap img {
-    float: left;
-    margin: 80px 160px 0 220px;
-}
-
-footer ul {
-    float: left;
-    margin-top: 75px;
+footer ul:first-of-type {
+    margin-left: 160px;
 }
 
 footer ul:last-of-type {
@@ -804,22 +785,23 @@ footer ul li a:hover {
     color: #fff;
 }
 
-.contact {
-    width: 670px;
-    float: left;
-    overflow: hidden;
-    clear: both;
-    margin: 50px 0px 0px 220px;
+.footer-contact-row {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px 0px 0px;
     border-bottom: 1px solid rgba(80, 80, 80, 0.7);
 }
 
-.contact-wrap {
-    width: 260px;
-    float: left;
-    overflow: hidden;
+.contact-wrap:nth-of-type(1) {
+    width: 33%;
 }
 
-.contact p {
+.contact-wrap:nth-of-type(2) {
+    width: 43%;
+}
+
+.footer-contact-row p {
     width: 100%;
     float: left;
     color: #ffffff;
@@ -833,7 +815,7 @@ footer ul li a:hover {
     color: #c4c4c4;
 }
 
-.contact p span {
+.footer-contact-row p span {
     color: #feed54;
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
@@ -841,63 +823,51 @@ footer ul li a:hover {
     text-transform: uppercase;
 }
 
-.contact .social-medias {
-    overflow: hidden;
-    float: right;
+.footer-contact-row .social-medias {
     padding: 45px 15px 50px 5px;
 }
 
-.contact a {
+.footer-contact-row a {
     color: #4f4f4f;
     font-size: 25px;
     padding-right: 10px;
 }
 
-.contact a:hover {
+.footer-contact-row a:hover {
     color: #ffffff;
 }
 
-.contact a:last-of-type {
+.footer-contact-row a:last-of-type {
     padding-right: 0px;
 }
 
-.notes {
-    width: 670px;
-    float: left;
-    overflow: hidden;
-    clear: both;
-    margin: 0px 0px 0px 220px;
+.footer-notes-row {
+    width: 60%;
+    display: flex;
+    justify-content: left;
     padding: 23px 0 23px 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #7e7e7e;
 }
 
-.notes p:first-of-type {
-    float: left;
-}
-
-.notes p:last-of-type {
-    float: right;
-}
-
-.notes p a, .notes p a:visited {
+.footer-notes-row p a, .notes p a:visited {
     color: #7e7e7e;
     text-decoration: none;
 }
 
-.notes p a:hover {
+.footer-notes-row p a:hover {
     color: #bbbbbb;
     text-decoration: none;
 }
 
 /* header: adding the line under a menu item when :hover */
-.underline {
+.header-underline {
     display: inline;
     position: relative;
     overflow: hidden;
 }
-.underline:after {
+.header-underline:after {
     content: "";
     position: absolute;
     z-index: 10;
@@ -910,9 +880,9 @@ footer ul li a:hover {
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
 }
-.underline:hover:after,
-.underline:focus:after,
-.underline:active:after {
+.header-underline:hover:after,
+.header-underline:focus:after,
+.header-underline:active:after {
     left: 0;
     right: auto;
     width: 100%;
@@ -920,11 +890,11 @@ footer ul li a:hover {
 /* header: finished adding the line under a menu item when :hover */
 
 /* footer: adding the line under a menu item when :hover*/
-.underline2 a {
+.footer-underline a {
     position: relative;
     overflow: hidden;
 }
-.underline2 a:after {
+.footer-underline a:after {
     content: "";
     position: absolute;
     z-index: 10;
@@ -937,9 +907,9 @@ footer ul li a:hover {
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
 }
-.underline2 a:hover:after,
-.underline2 a:focus:after,
-.underline2 a:active:after {
+.footer-underline a:hover:after,
+.footer-underline a:focus:after,
+.footer-underline a:active:after {
     left: 0;
     right: auto;
     width: 100%;
