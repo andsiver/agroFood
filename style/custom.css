@@ -204,7 +204,7 @@ header nav li:first-child {
 }
 
 .block-one:hover {
-    background-position-x: -380px;
+    background-position-x: 100%;
     transition: 1s;
 }
 
@@ -243,7 +243,7 @@ header nav li:first-child {
 }
 
 .block-five:hover {
-    background-position-y: -369px;
+    background-position-y: 100%;
     transition: 1s;
 }
 
@@ -494,7 +494,6 @@ header nav li:first-child {
 
 .container-xxl {
     background: url('../img/bg/third-bg.png') center top no-repeat;
-    width: 1600px;
 } /* Container for the new bg */
 
 .agro-perfect_cakes {
@@ -566,6 +565,10 @@ header nav li:first-child {
 
 .imgs-wall_row_item {
     width: 25%;
+}
+
+.imgs-wall_row_item img {
+    max-width: 100%;
 }
 
 
