@@ -253,15 +253,18 @@ header nav li:first-child {
 }
 
 .block-one h2, .block-two h2, .block-three h2, .block-five h2 {
-    padding: 30px 30px;
+    padding: 0px 30px;
     font-size: 30px;
-}
-
-
-.block-one h2:nth-child(1), .block-two h2:nth-child(1), .block-three h2:nth-child(1), .block-five h2:nth-child(1) {
+    font-weight: 100;
+    text-align: left;
+    line-height: 33px;
     position: absolute;
     left: 0;
     bottom: 35px;
+}
+
+.block-one h2 span, .block-two h2 span, .block-three h2 span, .block-five h2 span {
+    display: block;
     font-weight: 700;
 }
 
