@@ -37,7 +37,6 @@
 }
 
 body {
-    max-width: 1600px;
     background-color: white;
     background: url('../img/bg/first-bg.png') top center no-repeat;
     margin: 0 auto;
@@ -560,8 +559,14 @@ header nav li:first-child {
 
 /* Section #6: Imgs Wall */
 
+.section6_imgs-wall {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .imgs-wall_row {
+    max-width: 1600px;
     display: flex;
     flex-wrap: wrap;
 }
