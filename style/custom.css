@@ -572,11 +572,57 @@ header nav li:first-child {
 }
 
 .imgs-wall_row_item {
-    width: 25%;
+    padding: 185px 200px;
+    position: relative;
 }
 
-.imgs-wall_row_item img {
-    max-width: 100%;
+.imgs-wall_row_item_hide-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(56, 33, 23, 0.6);
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.imgs-wall_row_item:hover .imgs-wall_row_item_hide-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.imgs-wall_row_item-1 {
+    background: url('../img/section-6/1.png') center no-repeat;
+}
+.imgs-wall_row_item-2 {
+    background: url('../img/section-6/2.png') center no-repeat;
+}
+.imgs-wall_row_item-3 {
+    background: url('../img/section-6/3.png') center no-repeat;
+}
+.imgs-wall_row_item-4 {
+    background: url('../img/section-6/4.png') center no-repeat;
+}
+.imgs-wall_row_item-5 {
+    background: url('../img/section-6/5.png') center no-repeat;
+}
+.imgs-wall_row_item-6 {
+    background: url('../img/section-6/6.png') center no-repeat;
+}
+.imgs-wall_row_item-7 {
+    background: url('../img/section-6/7.png') center no-repeat;
+}
+.imgs-wall_row_item-8 {
+    background: url('../img/section-6/8.png') center no-repeat;
 }
 
 
