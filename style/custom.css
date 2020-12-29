@@ -106,8 +106,13 @@ header .container {
     justify-content: space-between;
 }
 
+header .header-left {
+    display: flex;
+    justify-content: left;
+}
+
 header .header_logo {
-    width: 9%;
+    width: 100px;
     position: relative;
     z-index: 1;
 }
@@ -131,6 +136,7 @@ header nav li a, header nav li a:visited {
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    padding: 45px 0;
 }
 
 header nav li:last-child {
@@ -142,7 +148,7 @@ header nav li:first-child {
 }
 
 .header_button {
-    width: 13%;
+    width: 150px;
 }
 
 .header_button button {
@@ -179,66 +185,127 @@ header nav li:first-child {
 
 /* Header: Responsive Nav */
 
-#menu-icon {
+#checkbox_toggle {
     display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     .header-mobile-icon {
         display: none;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     header .container:nth-of-type(1) {
         min-height: 90px;
         position: relative;
-    }
-    nav {
-        margin-top: 105px;
-        padding-bottom: 105px;
-        position: absolute;
-        left: -100%;
-        background-color: rgba(0, 0, 0, 0.85);
-    }
-    nav ul {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    nav ul li {
-        text-align: center;
-    }
-    nav ul li a {
-        font-size: 30px;
+        justify-content: left;
     }
 
+    header .header-left {
+        width: 40%;
+    }
+
+    header .header_button {
+        width: 60%;
+    }
+
+    /* nav experiment */
+    
+    input[type=checkbox] {
+        display: none;
+    }
+
+    nav ul {
+        width: 100%;
+        margin-top: 105px;
+        padding-bottom: 105px;
+        background: rgba(0, 0, 0, 0.8);
+        transition: all 1s cubic-bezier(.325, 1, .22, 1);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: -100%;
+    }
+    
     header nav li:first-child {
         margin-left: 0px;
     }
+
+    nav li {
+        color: #fff;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 5px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav li {
+        padding: 45px 0;
+        margin-right: 0px;
+    }
     
-    .header-mobile-icon {
-        display: block;
-        font-size: 35px;
-        color: #ffffff;
-        padding: 35px 30px;
-        order: 3;
+    nav li a, nav li a:hover {
+        text-decoration: none;
     }
-    .header-mobile-icon:hover {
-        transition: 0.5s;
-        text-shadow: 0px 0px 15px #ccc;
-        cursor: pointer;
-        position: relative;
-        z-index: 30;
+    
+    input[type=checkbox]:checked ~ nav ul {
+        position: absolute;
+        left: 0;
     }
-    #menu-icon:checked + nav {
-        width: 100%;
+    
+    .hamburger {
         display: block;
         position: absolute;
-        left: 0%;
-        transition: 1s;
+        top: 40px;
+        right: 30px;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        transition: all 1s cubic-bezier(.19, 1, .22, 1);
     }
-}    
+    
+    .line {
+        position: absolute;
+        display: block;
+        background: #ffffff;
+        width: 30px;
+        height: 2px;
+        border-radius: 2px;
+        left: 0;
+        transition: all .6s cubic-bezier(.5, .1, 0, 1.2);
+    }
+    
+    .line-1 {
+        top: 0;
+    }
+    
+    .line-2 {
+        top: 10px;
+    }
+    
+    .line-3 {
+        top: 20px;
+    }
+    
+    input[type=checkbox]:checked ~ label .line-1 {
+        top: 0px;
+        width: 35px;
+        transform: translateX(-11px) rotate(-45deg) translateY(12px);
+    }
+    
+    input[type=checkbox]:checked ~ label .line-2 {
+        opacity: 0;
+    }
+    
+    input[type=checkbox]:checked ~ label .line-3 {
+        top: 14px;
+        width: 35px;
+        transform: translateX(-8px) rotate(45deg) translateY(-8px);
+    }
+}
 
 /* Section #1: Agro Awesome */
 
