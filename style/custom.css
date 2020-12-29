@@ -45,7 +45,7 @@ body {
 /* General Container */
 
 .container {
-    width: 1170px;
+    max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -176,6 +176,69 @@ header nav li:first-child {
 .header_main-title {
     margin: 200px 0 120px 0;
 }
+
+/* Header: Responsive Nav */
+
+#menu-icon {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .header-mobile-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container:nth-of-type(1) {
+        min-height: 90px;
+        position: relative;
+    }
+    nav {
+        margin-top: 105px;
+        padding-bottom: 105px;
+        position: absolute;
+        left: -100%;
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    nav ul li {
+        text-align: center;
+    }
+    nav ul li a {
+        font-size: 30px;
+    }
+
+    header nav li:first-child {
+        margin-left: 0px;
+    }
+    
+    .header-mobile-icon {
+        display: block;
+        font-size: 35px;
+        color: #ffffff;
+        padding: 35px 30px;
+        order: 3;
+    }
+    .header-mobile-icon:hover {
+        transition: 0.5s;
+        text-shadow: 0px 0px 15px #ccc;
+        cursor: pointer;
+        position: relative;
+        z-index: 30;
+    }
+    #menu-icon:checked + nav {
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0%;
+        transition: 1s;
+    }
+}    
 
 /* Section #1: Agro Awesome */
 
