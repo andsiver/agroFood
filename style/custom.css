@@ -216,13 +216,15 @@ header nav li:first-child {
 
     nav ul {
         width: 100%;
+        height: 100vh;
         margin-top: 105px;
         padding-bottom: 105px;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.9);
         transition: all 1s cubic-bezier(.325, 1, .22, 1);
         display: flex;
         flex-direction: column;
         position: absolute;
+        z-index: 50;
         left: -100%;
     }
     
@@ -303,34 +305,89 @@ header nav li:first-child {
         width: 35px;
         transform: translateX(-8px) rotate(45deg) translateY(-8px);
     }
+    .header_main-title {
+        margin: 200px 0 120px 40px;
+        transition: 1s;
+    }
+}    
+
+@media (max-width: 1420px) {
+    .header_main-title {
+        margin: 200px 0 120px 20px;
+        transition: 1s;
+    }
 
     /* Resp-Section #1: Agro Awesome */
 
     .section-1_agro-awesome .container-xl {
         width: 100%;
-        padding: 0 10px;
+        padding: 0px;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
+    .agro-awesome_first-part {
+        display: none;
+    }
+
     .agro-awesome_second-part {
         justify-content: center;
+        order: 0;
     }
 
     .agro-awesome_second-part .block-four {
         text-align: center;
         width: 100%;
         height: 250px;
-        background-color: rgb(26, 26, 26);
+        background-color: rgba(26, 26, 26, 0.8);
+        order: -1;
     }
 
     .agro-awesome_second-part .block-four h2 {
         text-align: center;
     }
 
+    .agro-awesome_second-part .block-five {
+        width: 500px;
+        height: 310px;
+    }
 
+    .agro-awesome_second-part .block-three:hover {
+        background-position-x: 20px;
+        background-position-y: 0px;
+        transition: 0.3s;
+    }
+
+    .agro-awesome_second-part .block-six {
+        display: block;
+        background: url('../img/section-1/awesomeSweets.png') no-repeat bottom left;
+        background-size: 1000px 893px;
+        width: 500px;
+        height: 310px;
+        border: none;
+        position: relative;
+    }
+    .agro-awesome_second-part .block-six:hover {
+        background-position-y: 57%;
+        background-position-x: 100%;
+        transition: 1s;
+    }
+    .agro-awesome_second-part .block-six h2 {
+        padding: 0px 30px;
+        font-size: 30px;
+        font-weight: 100;
+        text-align: left;
+        line-height: 33px;
+        position: absolute;
+        left: 0;
+        bottom: 35px;
+    }
+    .agro-awesome_second-part .block-six h2 span {
+        display: block;
+        font-weight: 700;
+    }
 }
 
 
@@ -398,6 +455,10 @@ header nav li:first-child {
     height: 369px;
 }
 
+.block-six {
+    display: none;
+}
+
 .block-five:hover {
     background-position-y: 100%;
     transition: 1s;
@@ -424,12 +485,6 @@ header nav li:first-child {
     font-weight: 700;
 }
 
-.block-one h2:nth-child(2), .block-two h2:nth-child(2), .block-three h2:nth-child(2), .block-five h2:nth-child(2) {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
 .block-four h2 {
     color: #fcdb5a;
     padding: 70px 80px;
@@ -441,6 +496,15 @@ header nav li:first-child {
 .block-four h2 span {
     display: block;
     font-weight: 700;
+}
+
+    /* Resp-Section #2: Agro Awesome */
+
+@media (max-width: 800px) {
+    .quality-food_text-wrap {
+        margin-top: 25px;
+        text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    }
 }
 
 
