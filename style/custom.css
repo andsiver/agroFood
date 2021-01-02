@@ -220,7 +220,6 @@ header nav li:first-child {
     nav ul {
         width: 100%;
         margin-top: 105px;
-        padding-bottom: 105px;
         background: rgba(0, 0, 0, 0.9);
         transition: all 1s cubic-bezier(.325, 1, .22, 1);
         display: flex;
