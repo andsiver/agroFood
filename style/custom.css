@@ -40,6 +40,7 @@ body {
     background-color: white;
     background: url('../img/bg/first-bg.png') top center no-repeat;
     margin: 0 auto;
+    min-width: 500px;
 }
 
 /* General Container */
@@ -78,13 +79,15 @@ h2 span {
 }
 
 h3 {
+    max-width: 510px;
+    margin: 0 auto;
+    padding: 0px 20px;
     color: #bfbfbf;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 18px;
     text-transform: none;
     text-align: center;
-    padding: 0px 310px;
     line-height: 25px;
 }
 
@@ -635,6 +638,24 @@ header nav li:first-child {
     color: #4bbdd5;
 }
 
+    /* Resp-Section #3: Agro Services */
+
+@media (max-width: 1100px) {
+    main .section3_agro-services {
+        padding-top: 100px;
+        padding-bottom: 90px;
+    }
+    .section3_agro-services .agro-services_icons_item-wrap {
+        width: 33%;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section3_agro-services .agro-services_icons_item-wrap {
+        width: 50%;
+    }
+}
 
 /* Section #3: Agro Services */
 
@@ -642,6 +663,31 @@ header nav li:first-child {
 .section3_agro-services {
     padding-top: 140px;
     padding-bottom: 130px;
+}
+
+.agro-services_icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.agro-services_icons_item-wrap {
+    width: 16.65%;
+    text-align: center;
+}
+
+.agro-services_icons_item-wrap .icon-img {
+    margin: 0 auto;
+}
+
+.agro-services_icons_item-wrap p {
+    margin: 25px 0 5px 0;
+    padding: 0;
+    color: #2e2e2e;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: none;
 }
 
 .agro-services_icons_item-wrap .steak {
@@ -682,26 +728,6 @@ header nav li:first-child {
 .cereals:hover, .vburger:hover, .vegies:hover {
     background-position-y: 60px;
     transition: 1s;
-}
-
-.agro-services_icons {
-    display: flex;
-    margin-top: 80px;
-}
-
-.agro-services_icons_item-wrap {
-    width: 16.65%;
-    text-align: center;
-}
-
-.agro-services_icons_item-wrap p {
-    margin: 25px 0 5px 0;
-    padding: 0;
-    color: #2e2e2e;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: none;
 }
 
 
