@@ -946,11 +946,11 @@ header nav li:first-child {
         width: 50%;
     }
     .agro-progress_items_item-wrap .agro-progress_items_item-wrap_img-wrap {
-        width: 30%;
+        width: 40%;
     }
     
     .agro-progress_items_item-wrap .agro-progress_items_item-wrap_text-wrap {
-        width: 70%;
+        width: 60%;
     }
 }
 
@@ -959,7 +959,7 @@ header nav li:first-child {
 
 .section5_agro-progress {
     padding-top: 140px;
-    padding-bottom: 130px;
+    padding-bottom: 100px;
 }
 
 .agro-progress_items {
@@ -1000,8 +1000,17 @@ header nav li:first-child {
     width: 50%;
 }
 
+    /* Resp-Section #6: Imgs Wall */ 
+
+@media (max-width: 1620px) {
+    .section6_imgs-wall .imgs-wall_row {
+        max-width: 800px;
+        background: rgba(0, 0, 0, 0.1);
+    }
+}
 
 /* Section #6: Imgs Wall */
+
 
 .section6_imgs-wall {
     width: 100%;
@@ -1013,10 +1022,12 @@ header nav li:first-child {
     max-width: 1600px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .imgs-wall_row_item {
-    padding: 185px 200px;
+    width: 400px;
+    height: 370px;
     position: relative;
 }
 
@@ -1042,7 +1053,12 @@ header nav li:first-child {
 .imgs-wall_row_item:hover .imgs-wall_row_item_hide-text {
     visibility: visible;
     opacity: 1;
-  }
+    transition: 0.5s;
+}
+
+.imgs-wall_row_item:hover {
+    background-size: 101%;
+}
 
 .imgs-wall_row_item-1 {
     background: url('../img/section-6/1.png') center no-repeat;
