@@ -1428,6 +1428,25 @@ header nav li:first-child {
     text-transform: none;
 }
 
+    /* Resp-Labels */
+@media (max-width: 1200px) {
+    .section8_blog .blog_posts {
+        padding-bottom: 70px;
+        transition: 1s;
+    }
+    main .section8_blog .container:after {
+        display: block;
+        content: " ";
+        margin: 0 auto;
+        width: 500px;
+        height: 300px;
+        background-image: url('../img/section-8/labels-sprite.png'), url('../img/section-8/labels-sprite.png');
+        background-position: 50px 0px, -450px 150px;
+        background-repeat: no-repeat;
+        padding-bottom: 70px;
+        transition: 0.5s;
+    }   
+}
     /* Labels */
 
 .section8_blog .container:after {
@@ -1439,7 +1458,9 @@ header nav li:first-child {
     padding-bottom: 110px;
 }
 
+
 /* Footer */
+
 
 footer {
     background: #2e2e2e url('../img/footer/map.png') right top no-repeat;
