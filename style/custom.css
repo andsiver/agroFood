@@ -906,7 +906,7 @@ header nav li:first-child {
         color: #d8bb90;
         font-size: 200px;
         text-shadow: 0px 0px 3px rgb(27, 27, 27);
-        padding: 250px 0 170px 20px;
+        padding: 250px 0 70px 20px;
         line-height: 180px;
         transition: 1s;
     }
@@ -930,6 +930,29 @@ header nav li:first-child {
     line-height: 180px;
 }
 
+
+    /* Resp-Section #5: Agro Progress */
+
+@media (max-width: 950px) {
+    main .section5_agro-progress {
+        padding-top: 100px;
+    }
+    .section5_agro-progress .agro-progress_items {
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .section5_agro-progress .agro-progress_items_item-wrap {
+        padding-top: 20px;
+        width: 50%;
+    }
+    .agro-progress_items_item-wrap .agro-progress_items_item-wrap_img-wrap {
+        width: 30%;
+    }
+    
+    .agro-progress_items_item-wrap .agro-progress_items_item-wrap_text-wrap {
+        width: 70%;
+    }
+}
 
 /* Section #5: Agro Progress */
 
