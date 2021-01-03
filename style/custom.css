@@ -1136,15 +1136,31 @@ header nav li:first-child {
 
     /* Resp-Section #7: Feedback */ 
 
-@media (max-width: 1620px) {
+@media (max-width: 900px) {
     main .section7_feedback h2 {
         padding-top: 90px;
+        transition: 1s;
     }
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
     .feedback_review .feedback_review-quotation {
         font-size: 70px;
-        padding: 25px 0 0 10px;
+        padding: 25px 0 0 5px;
+        transition: 1s;
+    }
+    .feedback_review .feedback_review-text {
+        font-size: 20px;
+        padding: 30px 30px 0 20px;
+        line-height: 27px;
+        text-align: justify;
+        transition: 1s;
+    }
+    .section7_feedback .feedback_credentials img:last-of-type {
+        margin: 70px 50px 30px 0px;
+        padding: 0;
+    }
+    .section7_feedback .feedback_credentials p span {
+        display: block;
     }
 }
 
@@ -1153,6 +1169,7 @@ header nav li:first-child {
 
 .section7_feedback {
     background: #25292c url('../img/bg/fourth-bg.png') center top no-repeat;
+    min-height: 714px;
 }
 
 .section7_feedback .container {
@@ -1185,8 +1202,8 @@ header nav li:first-child {
     font-family: 'Times New Roman Italic', cursive;
     font-size: 25px;
     text-transform: none;
-    width: 85%;
-    padding: 50px 0 0 40px;
+    width: 1005px;
+    padding: 50px 20px 0 40px;
     line-height: 30px;
     text-align: left;
 }
@@ -1195,7 +1212,6 @@ header nav li:first-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 147px;
 }
 
 .feedback_credentials img:first-of-type {
