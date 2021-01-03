@@ -40,7 +40,7 @@ body {
     background-color: white;
     background: url('../img/bg/first-bg.png') top center no-repeat;
     margin: 0 auto;
-    min-width: 500px;
+    min-width: 320px;
 }
 
 /* General Container */
@@ -192,6 +192,29 @@ header nav li:first-child {
     display: none;
 }
 
+@media (max-width: 500px) {
+    .container {
+        padding: 0 5px !important;
+    }
+    body header .header-left {
+        width: 39%;
+    }
+    header .header_main-title {
+        font-size: 100px;
+        transition: 1s;
+    }
+    header .header_button button {
+        padding: 15px 20px;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 30px; 
+    }
+    .dropdown .hamburger {
+        top: 40px;
+        right: 10px;
+    }
+}
+
 @media (min-width: 800px) {
     .header-mobile-icon {
         display: none;
@@ -211,10 +234,6 @@ header nav li:first-child {
 
     header .header_button {
         width: 60%;
-    }
-    
-    input[type=checkbox] {
-        display: none;
     }
 
     nav ul {
@@ -250,6 +269,11 @@ header nav li:first-child {
     
     nav li a, nav li a:hover {
         text-decoration: none;
+    }
+
+        
+    input[type=checkbox] {
+        display: none;
     }
     
     input[type=checkbox]:checked ~ nav ul {
@@ -397,6 +421,11 @@ header nav li:first-child {
         padding: 50px 80px;
     }
 }
+@media (max-width: 500px) {
+    .container-xl .block-one, .container-xl .block-two, .container-xl .block-three, .container-xl .block-five, .container-xl .block-six {
+        width: 100%;
+    }
+}
 
 
 /* Section #1: Agro Awesome */
@@ -509,63 +538,63 @@ header nav li:first-child {
     /* Resp-Section #2: Agro Awesome */
 
 @media (max-width: 1050px) {
-    .section2_quality-food .container {
-        background-position: 400px 0px, -30px 40px !important;
+    main .section2_quality-food .container {
+        background-position: 400px 0px, -30px 40px;
         transition: 1s; 
     }    
 }
 @media (max-width: 1000px) {
-    .section2_quality-food .container {
-        background-position: 350px 0px, -80px 40px !important;
+    main .section2_quality-food .container {
+        background-position: 350px 0px, -80px 40px;
         transition: 1s; 
     }    
 }
 @media (max-width: 950px) {
-    .section2_quality-food .container {
-        background-position: 300px 0px, -130px 40px !important;
+    main .section2_quality-food .container {
+        background-position: 300px 0px, -130px 40px;
         transition: 1s; 
     }    
 }
 @media (max-width: 900px) {
-    .section2_quality-food .container {
-        background-position: 250px 0px, -180px 40px !important;
+    main .section2_quality-food .container {
+        background-position: 250px 0px, -180px 40px;
         transition: 1s; 
     }    
 }
 @media (max-width: 850px) {
-    .section2_quality-food .container {
-        background-position: 200px 0px, -230px 40px !important;
+    main .section2_quality-food .container {
+        background-position: 200px 0px, -230px 40px;
         transition: 1s; 
     }    
 }
 @media (max-width: 800px) {
-    .section2_quality-food .container {
-        background-position: 150px 0px, -280px 40px !important;
+    main .section2_quality-food .container {
+        background-position: 150px 0px, -280px 40px;
         transition: 1s; 
     }    
 }
 @media (max-width: 750px) {
-    .section2_quality-food .container {
-        background-position: 100px 0px, -330px 40px !important;
+    main .section2_quality-food .container {
+        background-position: 100px 0px, -330px 40px;
         transition: 1s; 
     }    
 }
 @media (max-width: 700px) {
-    .section2_quality-food .container {
-        background-position: 50px 0px, -380px 40px !important;
+    main .section2_quality-food .container {
+        background-position: 50px 0px, -380px 40px;
         transition: 1s; 
     }    
 }
 @media (max-width: 650px) {
-    .section2_quality-food .container {
-        background-position: 0px 0px, -430px 0px !important;
+    main .section2_quality-food .container {
+        background-position: 0px 0px, -430px 0px;
         transition: 1s; 
     }    
 }
 
 @media (max-width: 600px) {
-    .section2_quality-food .container {
-        background-position: 0px 40px, -430px 40px !important;
+    main .section2_quality-food .container {
+        background-position: 0px 40px, -430px 40px;
         transition: 1s; 
     } 
     .section2_quality-food .quality-food_text-wrap {
@@ -575,6 +604,23 @@ header nav li:first-child {
     }
     .section2_quality-food .quality-food_text-wrap p span {
         font-size: 75px;
+        transition: 1s;
+    }
+}
+@media (max-width: 500px) {
+    main .section2_quality-food {
+        padding-top: 20px;
+    }
+    main .section2_quality-food .container {
+        justify-content: flex-start;
+    }
+    main .section2_quality-food .quality-food_text-wrap {
+        padding: 120px 20px 140px 45px;
+        transition: 1s;
+    }
+    .section2_quality-food .quality-food_text-wrap p span {
+        font-size: 48px;
+        margin-right: 15px;
         transition: 1s;
     }
 }
@@ -656,6 +702,37 @@ header nav li:first-child {
     }
 }
 
+@media (max-width: 500px) {
+    main .section3_agro-services {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .section3_agro-services .agro-services_icons {
+        margin-top: 40px;
+    }
+    .section3_agro-services .agro-services_icons_item-wrap .icon-img {
+        width: 160px;
+    }
+    .section3_agro-services .agro-services_icons_item-wrap .steak {
+        background-position: -15px 0px;
+    }
+    .section3_agro-services .agro-services_icons_item-wrap .cereals {
+        background-position: -215px 0px;
+    }
+    .section3_agro-services .agro-services_icons_item-wrap .pizza {
+        background-position: -415px 0px;
+    }
+    .section3_agro-services .agro-services_icons_item-wrap .vburger {
+        background-position: -615px 0px;
+    }
+    .section3_agro-services .agro-services_icons_item-wrap .cupcake {
+        background-position: -815px 0px;
+    }
+    .section3_agro-services .agro-services_icons_item-wrap .vegies {
+        background-position: -1015px 0px;
+    }
+}
+
 /* Section #3: Agro Services */
 
 
@@ -730,6 +807,67 @@ header nav li:first-child {
 }
 
     /* Resp-Section #4: Agro Perfect */
+@media (max-width: 500px) {
+    main .section4_agro-perfect h2 {
+        padding: 100px 0px 0px 0px;
+    }
+    main .section4_agro-perfect h3 {
+        padding: 25px 10px 0px 10px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 25px;
+    }
+    .section4_agro-perfect .agro-perfect_btn button {
+        margin: 30px 0 40px 0;
+    }
+    .section4_agro-perfect .agro-perfect_row .perfect_img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .section4_agro-perfect .agro-perfect_row .perfect_txt {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .section4_agro-perfect .agro-perfect_row .perfect_txt p, .section4_agro-perfect .agro-perfect_row .perfect_txt h4 {
+        text-align: center;
+    }
+    .section4_agro-perfect .agro-perfect_row .perfect_img img {
+        width: 100%;
+    }
+    .agro-perfect_row .agro-perfect_row-item:nth-of-type(1) {
+        order: 1;
+    }
+    .agro-perfect_row .agro-perfect_row-item:nth-of-type(2) {
+        order: 2;
+    }
+    .agro-perfect_row .agro-perfect_row-item:nth-of-type(3) {
+        order: 3;
+    }
+    .agro-perfect_row .agro-perfect_row-item:nth-of-type(4) {
+        order: 4;
+    }
+    .agro-perfect_row .agro-perfect_row-item:nth-of-type(5) {
+        order: 6;
+    }
+    .agro-perfect_row .agro-perfect_row-item:nth-of-type(6) {
+        order: 5;
+    }
+    .agro-perfect_row .agro-perfect_row-item:nth-of-type(7) {
+        order: 8;
+        background-color: rgb(255, 255, 255);
+    }
+    .agro-perfect_row .agro-perfect_row-item:nth-of-type(8) {
+        order: 7;
+        background-color: rgb(255, 255, 255);
+    }
+    .section4_agro-perfect .agro-perfect_row .agro-perfect_row-item p {
+        padding: 0px 25px 30px 25px;
+    }
+}
 
 @media (max-width: 600px) {
     main .section4_agro-perfect h2 {
@@ -737,7 +875,7 @@ header nav li:first-child {
     }
     main .section4_agro-perfect h3 {
         text-align: justify;
-        color: rgb(231, 231, 231);
+        color: rgb(211, 211, 211);
     }
     .agro-perfect_btn {
         margin: 0 auto;
@@ -912,6 +1050,25 @@ header nav li:first-child {
     }
 }
 
+@media (max-width: 500px) {
+    .section4_agro-perfect .container-xxl {
+        background-position: -950px 0px;
+        transition: 1s;
+    }
+    .section4_agro-perfect .agro-perfect_cakes {
+        margin-top: 30px;
+        transition: 1s;
+    }
+    .section4_agro-perfect .agro-perfect_cakes h1 {
+        color: #d8bb90;
+        font-size: 120px;
+        text-shadow: 0px 0px 3px rgb(0, 0, 0);
+        padding: 290px 0 190px 20px;
+        line-height: 100px;
+        transition: 1s;
+    }
+}
+
     /* Tasty Cakes */
 
 .container-xxl {
@@ -932,6 +1089,15 @@ header nav li:first-child {
 
 
     /* Resp-Section #5: Agro Progress */
+
+@media (max-width: 500px) {
+    body main .section5_agro-progress {
+        padding: 60px 0;
+    }
+    main .section5_agro-progress .agro-progress_items_item-wrap {
+        width: 100%;
+    }
+}    
 
 @media (max-width: 950px) {
     main .section5_agro-progress {
@@ -1001,7 +1167,11 @@ header nav li:first-child {
 }
 
     /* Resp-Section #6: Imgs Wall */ 
-
+@media (max-width: 500px) {
+    main .section6_imgs-wall .imgs-wall_row .imgs-wall_row_item {
+        width: 320px;
+    }
+}
 @media (max-width: 1640px) {
     main .section6_imgs-wall {
         background-image: linear-gradient(to top, #24292c, #55585b, #8a8c8e, #c3c4c5, #ffffff);
@@ -1135,7 +1305,21 @@ header nav li:first-child {
 
 
     /* Resp-Section #7: Feedback */ 
-
+@media (max-width: 500px) {
+    main .section7_feedback {
+        background: #25292c url(../img/bg/fourth-bg.png) center bottom no-repeat;
+    }
+    main .section7_feedback .feedback_credentials img:first-of-type {
+        margin: 45px 20px 30px 20px;
+    }
+    main .section7_feedback .feedback_credentials p {
+        padding: 35px 0px 45px 10px;
+    }
+    main .section7_feedback .feedback_credentials img:last-of-type {
+        margin: 30px 50px 30px 20px;
+    }
+}
+       
 @media (max-width: 900px) {
     main .section7_feedback h2 {
         padding-top: 90px;
@@ -1241,6 +1425,7 @@ header nav li:first-child {
 
 
     /* Resp-Section #8: Blog */
+
 @media (max-width: 1180px) {
     .section8_blog .blog_posts a, .section8_blog .blog_posts a:visited, .section8_blog .blog_posts a:hover {
         width: 340px;
@@ -1324,6 +1509,26 @@ header nav li:first-child {
         transition: 1s;
     }
 }
+
+@media (max-width: 500px) {
+    main .section8_blog h2 {
+        padding-top: 60px;
+    }
+    main .section8_blog h3 {
+        padding-bottom: 60px;
+    }
+    main .section8_blog .blog_posts a, .section8_blog .blog_posts a:visited, .section8_blog .blog_posts a:hover {
+        width: 320px;
+        height: 320px;
+    }
+    main .section8_blog .blog_posts_the-post_date p {
+        margin: 0 230px 0 30px;
+    }
+    main .section8_blog .blog_posts_the-post_title {
+        padding: 160px 0 25px 25px;
+    }
+}
+
 
 /* Section #8: Blog */
 
@@ -1448,6 +1653,19 @@ header nav li:first-child {
         transition: 0.5s;
     }   
 }
+@media (max-width: 500px) {
+    main .section8_blog .container:after {
+        display: block;
+        content: " ";
+        margin: 0 auto;
+        width: 230px;
+        height: 600px;
+        background-image: url('../img/section-8/labels-sprite.png'), url('../img/section-8/labels-sprite.png'), url('../img/section-8/labels-sprite.png'), url('../img/section-8/labels-sprite.png');
+        background-position: -10px 0px, -235px 150px, -755px 300px, -485px 450px;
+        background-repeat: no-repeat;
+        padding-bottom: 60px;
+    }   
+}
     /* Labels */
 
 .section8_blog .container:after {
@@ -1484,6 +1702,10 @@ header nav li:first-child {
         border-radius: 20px;
         margin-bottom: 20px;
         transition: 1s;
+    }
+    footer .footer_map iframe {
+        width: 650px;
+        height: 500px;
     }
     footer .footer_container {
         width: 590px;
@@ -1536,6 +1758,10 @@ header nav li:first-child {
         margin-bottom: 20px;
         transition: 1s;
     }
+    footer .footer_map iframe {
+        width: 450px;
+        height: 450px;
+    }
     footer .footer_container {
         width: 390px;
         order: 2;
@@ -1575,8 +1801,45 @@ header nav li:first-child {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         transition: 1s;
     }
+}
+@media (max-width: 500px) {
+    footer .footer_map {
+        width: 300px;
+        height: 450px;
+        order: 1;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        transition: 1s;
+    }
+    footer .footer_map iframe {
+        width: 300px;
+        height: 450px;
+    }
+    footer .footer_container {
+        width: 240px;
+        order: 2;
+        background-color: #272727;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        transition: 1s;
+    }  
+    footer .footer_nav {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    footer .footer_nav ul:last-of-type {
+        margin: 0 auto;
+        padding: 20px 30px;
+        border-radius: 20px;
+        background-color: #222222;
+    }
+    footer .footer_nav ul:first-of-type {
+        margin-left: 60px;
+        margin-bottom: 30px;
 }
 
 
@@ -1606,6 +1869,10 @@ footer {
 }
 
 .footer_map {
+    width: 650px;
+    height: 500px;
+}
+.footer_map iframe {
     width: 650px;
     height: 500px;
 }
@@ -1761,5 +2028,3 @@ footer ul li a:hover {
     width: 100%;
 }
 /* footer: finished adding the line under a menu item when :hover */
-
-
