@@ -905,7 +905,7 @@ header nav li:first-child {
     .section4_agro-perfect .agro-perfect_cakes h1 {
         color: #d8bb90;
         font-size: 200px;
-        text-shadow: 0px 0px 3px rgb(27, 27, 27);
+        text-shadow: 0px 0px 3px rgb(0, 0, 0);
         padding: 250px 0 70px 20px;
         line-height: 180px;
         transition: 1s;
@@ -1477,6 +1477,7 @@ header nav li:first-child {
         transition: 1s;
     }
     footer .footer_map {
+        margin-right: 20px;
         width: 650px;
         height: 500px;
         order: 0;
@@ -1508,7 +1509,18 @@ header nav li:first-child {
         padding-top: 10px;
         transition: 1s;
     }
+    footer .footer_contact {
+        padding-bottom: 55px;
+    }
 }
+@media (max-width: 1340px) {
+    footer .footer_map {
+        margin-right: 0px;
+    }
+    footer .footer_contact {
+        padding-bottom: 0px;
+    }
+}    
 @media (max-width: 720px) {
     footer .footer_main-container {
         justify-content: center;
@@ -1559,6 +1571,7 @@ header nav li:first-child {
     }
     footer .footer_bottomline {
         font-size: 12px;
+        line-height: 20px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
