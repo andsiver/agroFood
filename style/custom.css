@@ -1002,10 +1002,50 @@ header nav li:first-child {
 
     /* Resp-Section #6: Imgs Wall */ 
 
-@media (max-width: 1620px) {
+@media (max-width: 1640px) {
+    main .section6_imgs-wall {
+        background-image: linear-gradient(to top, #24292c, #55585b, #8a8c8e, #c3c4c5, #ffffff);
+    }
     .section6_imgs-wall .imgs-wall_row {
-        max-width: 800px;
-        background: rgba(0, 0, 0, 0.1);
+        max-width: 1200px;
+    }
+    .section6_imgs-wall .imgs-wall_row .imgs-wall_row_item {
+        width: 300px;
+        height: 300px;
+    }
+    .imgs-wall_row .imgs-wall_row_item:hover {
+        background-size: 110%;
+    }
+}
+@media (max-width: 1240px) {
+    .section6_imgs-wall .imgs-wall_row {
+        max-width: 1000px;
+    }
+    .section6_imgs-wall .imgs-wall_row .imgs-wall_row_item {
+        width: 400px;
+    }
+}
+@media (max-width: 840px) {
+    .section6_imgs-wall .imgs-wall_row .imgs-wall_row_item {
+        width: 350px;
+        height: 300px;
+    }
+    .imgs-wall_row .imgs-wall_row_item:hover {
+        background-size: 110%;
+    }
+}
+@media (max-width: 740px) {
+    .section6_imgs-wall .imgs-wall_row .imgs-wall_row_item {
+        width: 300px;
+        height: 250px;
+    }
+    .imgs-wall_row .imgs-wall_row_item:hover {
+        background-size: 110%;
+    }
+}
+@media (max-width: 640px) {
+    .section6_imgs-wall .imgs-wall_row .imgs-wall_row_item {
+        width: 400px;
     }
 }
 
@@ -1062,29 +1102,45 @@ header nav li:first-child {
 
 .imgs-wall_row_item-1 {
     background: url('../img/section-6/1.png') center no-repeat;
+    background-size: cover;
 }
 .imgs-wall_row_item-2 {
     background: url('../img/section-6/2.png') center no-repeat;
+    background-size: cover;
 }
 .imgs-wall_row_item-3 {
     background: url('../img/section-6/3.png') center no-repeat;
+    background-size: cover;
 }
 .imgs-wall_row_item-4 {
     background: url('../img/section-6/4.png') center no-repeat;
+    background-size: cover;
 }
 .imgs-wall_row_item-5 {
     background: url('../img/section-6/5.png') center no-repeat;
+    background-size: cover;
 }
 .imgs-wall_row_item-6 {
     background: url('../img/section-6/6.png') center no-repeat;
+    background-size: cover;
 }
 .imgs-wall_row_item-7 {
     background: url('../img/section-6/7.png') center no-repeat;
+    background-size: cover;
 }
 .imgs-wall_row_item-8 {
     background: url('../img/section-6/8.png') center no-repeat;
+    background-size: cover;
 }
 
+
+    /* Resp-Section #7: Feedback */ 
+
+    @media (max-width: 1620px) {
+        main .section7_feedback h2 {
+            padding-top: 90px;
+        }
+    }
 
 /* Section #7: Feedback */
 
