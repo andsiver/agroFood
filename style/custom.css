@@ -1136,11 +1136,17 @@ header nav li:first-child {
 
     /* Resp-Section #7: Feedback */ 
 
-    @media (max-width: 1620px) {
-        main .section7_feedback h2 {
-            padding-top: 90px;
-        }
+@media (max-width: 1620px) {
+    main .section7_feedback h2 {
+        padding-top: 90px;
     }
+}
+@media (max-width: 1000px) {
+    .feedback_review .feedback_review-quotation {
+        font-size: 70px;
+        padding: 25px 0 0 10px;
+    }
+}
 
 /* Section #7: Feedback */
 
