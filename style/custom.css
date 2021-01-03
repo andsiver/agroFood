@@ -1429,6 +1429,7 @@ header nav li:first-child {
 }
 
     /* Resp-Labels */
+
 @media (max-width: 1200px) {
     .section8_blog .blog_posts {
         padding-bottom: 70px;
@@ -1459,20 +1460,144 @@ header nav li:first-child {
 }
 
 
+    /* Resp-Footer */ 
+
+@media (max-width: 1550px) {
+    footer .footer_map {
+        width: 600px;
+        height: 500px;
+        overflow: hidden;
+        transition: 1s;
+    }
+}
+@media (max-width: 1490px) {
+    footer .footer_main-container {
+        padding-top: 20px;
+        justify-content: center;
+        transition: 1s;
+    }
+    footer .footer_map {
+        width: 650px;
+        height: 500px;
+        order: 0;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        transition: 1s;
+    }
+    footer .footer_container {
+        width: 590px;
+        order: 1;
+        background-color: #272727;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        transition: 1s;
+    }
+    .footer_container .footer_contact .social-medias {
+        padding: 45px 0px 50px 30px;
+        transition: 1s;
+    }
+    .footer_contact .contact-wrap {
+        min-width: 235px;
+        transition: 1s;
+    }
+    .footer_container .footer_nav {
+        padding-top: 20px;
+        transition: 1s;
+    }
+    .footer_nav a img {
+        padding-top: 10px;
+        transition: 1s;
+    }
+}
+@media (max-width: 720px) {
+    footer .footer_main-container {
+        justify-content: center;
+        padding-left: 0px;
+        transition: 1s;
+    }
+    footer .footer_map {
+        width: 450px;
+        height: 450px;
+        order: 1;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        transition: 1s;
+    }
+    footer .footer_container {
+        width: 390px;
+        order: 2;
+        background-color: #272727;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        transition: 1s;
+    }
+    .footer_container .footer_contact .social-medias {
+        padding: 45px 0px 50px 30px;
+        transition: 1s;
+    }
+    .footer_contact .contact-wrap {
+        text-align: center;
+        min-width: 235px;
+        transition: 1s;
+    }
+
+    body footer ul:first-of-type {
+        margin-left: 50px;
+        transition: 1s;
+    }
+    
+    body footer ul:last-of-type {
+        margin-left: 40px;
+        transition: 1s;
+    }
+    footer .footer_contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+    }
+    footer .footer_bottomline {
+        font-size: 12px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+    }
+}
+
+
 /* Footer */
 
 
 footer {
-    background: #2e2e2e url('../img/footer/map.png') right top no-repeat;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
 }
 
-footer .container {
+.footer_main-container {
+    width: 1580px;
+    padding-left: 20px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.footer_container {
+    width: 790px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_map {
+    width: 650px;
+    height: 500px;
 }
 
 .footer_nav {
-    width: 60%;
     display: flex;
     justify-content: left;
     padding-top: 70px;
@@ -1499,19 +1624,14 @@ footer ul li a:hover {
 }
 
 .footer_contact {
-    width: 60%;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     margin: 50px 0px 0px 0px;
     border-bottom: 1px solid rgba(80, 80, 80, 0.7);
 }
 
-.contact-wrap:nth-of-type(1) {
-    width: 33%;
-}
-
-.contact-wrap:nth-of-type(2) {
-    width: 43%;
+.contact-wrap {
+    min-width: 260px;
 }
 
 .footer_contact p {
@@ -1535,7 +1655,7 @@ footer ul li a:hover {
 }
 
 .footer_contact .social-medias {
-    padding: 45px 15px 50px 5px;
+    padding: 45px 0px 50px 180px;
 }
 
 .footer_contact a {
@@ -1554,7 +1674,6 @@ footer ul li a:hover {
 }
 
 .footer_bottomline {
-    width: 60%;
     display: flex;
     justify-content: space-between;
     padding: 23px 0 23px 0;
