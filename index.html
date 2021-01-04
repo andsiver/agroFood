@@ -35,8 +35,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body> 
-   <div class="line-under-nav"></div>
+<body>
+    <div class="main-bg">
+        <img src="./img/bg/first-bg.jpg" alt="">
+    </div> 
+
+    <div class="line-under-nav"></div>
+
     <header>
         <div class="container">
             <div class="header-left">
@@ -51,7 +56,7 @@
                         <div class="line line-2"></div>
                         <div class="line line-3"></div>
                     </label>
-                    <nav>
+                    <nav class="header_nav">
                         <ul>
                             <li class="header-underline"><a href="#">Home</a></li>
                             <li class="header-underline"><a href="#">About</a></li>
@@ -68,7 +73,7 @@
         </div>
 
         <div class="container">            
-            <h1 class="header_main-title"><div>Organic Food</div></h1>
+            <h1 class="header_main-title">Organic Food</h1>
         </div>
     </header>
      
@@ -138,7 +143,7 @@
   <!--  Section #4: Agro Perfect -->
         <section class="section4_agro-perfect">
           <div class="container">
-            <h2><span>Agro perfect</span><div>food for you</div></h2>
+            <h2><span>Agro perfect</span> food for you</h2>
             <h3>
                 Latin words, combined with a handful of model sentence structures, 
                 to generate Lorem Ipsum which looks reasonable. The generated Lorem 
@@ -151,21 +156,21 @@
             <div class="agro-perfect_row">
                 <div class="agro-perfect_row-item perfect_img"><img src="./img/section-4/1.jpg" alt="Image with food depictured"></div>
                 <div class="agro-perfect_row-item perfect_txt">
-                    <h4><div>Health Benefits of a Raw Food</div></h4>
+                    <h4>Health Benefits of a Raw Food</h4>
                     <p>Dogfish shark, bango hog sucker, baikal oilfish, eeltail catfish regal whiptail catfish; squarehead cat.</p>
                 </div>
                 <div class="agro-perfect_row-item perfect_img"><img src="./img/section-4/2.jpg" alt="Image with food depictured"></div>
                 <div class="agro-perfect_row-item perfect_txt">
-                    <h4><div>Tips for Ripening your Fruit</div></h4>
+                    <h4>Tips for Ripening your Fruit</h4>
                     <p>The generated Lorem Ipsum is therefore always free from repe- tition injected humour, or</p>
                 </div>
                 <div class="agro-perfect_row-item perfect_txt">
-                    <h4><div>Superfoods you should be eating</div></h4>
+                    <h4>Superfoods you should be eating</h4>
                     <p>The generated Lorem Ipsum is therefore always free from repe- tition injected humour, or</p>
                 </div>
                 <div class="agro-perfect_row-item perfect_img"><img src="./img/section-4/3.jpg" alt="Image with food depictured"></div>
                 <div class="agro-perfect_row-item perfect_txt">
-                    <h4><div>Grunt torrent catfish squaretail Norwegian Atlantic salmon</div></h4>
+                    <h4>Grunt torrent catfish squaretail Norwegian Atlantic salmon</h4>
                     <p>Northern clingfish searobin betta blue shark. Jackfish leopard</p>
                 </div>
                 <div class="agro-perfect_row-item perfect_img"><img src="./img/section-4/4.jpg" alt="Image with food depictured"></div>
@@ -323,33 +328,35 @@
             <div class="footer_main-container">
                 <div class="footer_container">
                     <div class="footer_nav">
-                      <a href="#"><img src="./img/footer/logo.png" alt="Logo"></a>
-                      <ul>
-                          <li class="footer-underline"><a href="#">Home</a></li>
-                          <li class="footer-underline"><a href="#">About</a></li>
-                          <li class="footer-underline"><a href="#">Pages</a></li>
-                          <li class="footer-underline"><a href="#">Gallery</a></li>
-                          <li class="footer-underline"><a href="#">Blog</a></li>
-                          <li class="footer-underline"><a href="#">Contacts</a></li>
-                      </ul>
-                      <ul>
-                          <li class="footer-underline"><a href="#">Partnets</a></li>
-                          <li class="footer-underline"><a href="#">Customer Service</a></li>
-                          <li class="footer-underline"><a href="#">Vegetables</a></li>
-                          <li class="footer-underline"><a href="#">Fruits</a></li>
-                          <li class="footer-underline"><a href="#">Organic Food</a></li>
-                          <li class="footer-underline"><a href="#">Privacy policy</a></li>
-                      </ul>
+                      <nav>
+                        <a href="#"><img src="./img/footer/logo.png" alt="Logo"></a>
+                        <ul>
+                            <li class="footer-underline"><a href="#">Home</a></li>
+                            <li class="footer-underline"><a href="#">About</a></li>
+                            <li class="footer-underline"><a href="#">Pages</a></li>
+                            <li class="footer-underline"><a href="#">Gallery</a></li>
+                            <li class="footer-underline"><a href="#">Blog</a></li>
+                            <li class="footer-underline"><a href="#">Contacts</a></li>
+                        </ul>
+                        <ul>
+                            <li class="footer-underline"><a href="#">Partnets</a></li>
+                            <li class="footer-underline"><a href="#">Customer Service</a></li>
+                            <li class="footer-underline"><a href="#">Vegetables</a></li>
+                            <li class="footer-underline"><a href="#">Fruits</a></li>
+                            <li class="footer-underline"><a href="#">Organic Food</a></li>
+                            <li class="footer-underline"><a href="#">Privacy policy</a></li>
+                        </ul>
+                      </nav>
                     </div>
-                    <div class="footer_contact">
-                          <div class="contact-wrap"><p><span>Email</span></p><p>support@agrocompany.com</p></div>
-                          <div class="contact-wrap"><p><span>Phone</span></p><p>+1 (234) 56789,  +1 987 654 3210</p></div>
-                          <div class="social-medias">
-                              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                              <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                          </div>
-                    </div>
+                    <address>
+                        <div class="contact-wrap"><p><span>Email</span></p><p>support@agrocompany.com</p></div>
+                        <div class="contact-wrap"><p><span>Phone</span></p><p>+1 (234) 56789,  +1 987 654 3210</p></div>
+                        <div class="social-medias">
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        </div>
+                    </address>
                     <div class="footer_bottomline">
                           <p>&copy; 2017, AgroTheme by Artureanec | <a href="#">Privacy Policy</a> | <a href="#">Sitemap</a></p>
                           <p>All Rights Reserved.</p>
