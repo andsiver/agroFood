@@ -38,7 +38,7 @@
 
 body {
     background-color: white;
-    background: url('../img/bg/first-bg.png') top center no-repeat;
+    background: url('../img/bg/first-bg.jpg') top center no-repeat;
     margin: 0 auto;
     min-width: 320px;
 }
@@ -395,7 +395,7 @@ header nav li:first-child {
 
     .agro-awesome_second-part .block-six {
         display: block;
-        background: url('../img/section-1/awesomeSweets.png') no-repeat bottom left;
+        background: url('../img/section-1/awesomeSweets.jpg') no-repeat bottom left;
         background-size: 1000px 893px;
         width: 500px;
         height: 310px;
@@ -455,7 +455,7 @@ header nav li:first-child {
 }
 
 .block-one {
-    background: url('../img/section-1/awesomeSweets.png') no-repeat;
+    background: url('../img/section-1/awesomeSweets.jpg') no-repeat;
     width: 380px;
     height: 679px;
 }
@@ -466,7 +466,7 @@ header nav li:first-child {
 }
 
 .block-two {
-    background: url('../img/section-1/organicFood.png') no-repeat;
+    background: url('../img/section-1/organicFood.jpg') no-repeat;
     width: 500px;
     height: 310px;
 }
@@ -477,7 +477,7 @@ header nav li:first-child {
 }
 
 .block-three {
-    background: url('../img/section-1/tastyMeat.png') no-repeat;
+    background: url('../img/section-1/tastyMeat.jpg') no-repeat;
     width: 500px;
     height: 310px;
 }
@@ -494,7 +494,7 @@ header nav li:first-child {
 }
 
 .block-five {
-    background: url('../img/section-1/juicyFruits.png') no-repeat;
+    background: url('../img/section-1/juicyFruits.jpg') no-repeat;
     width: 616px;
     height: 369px;
 }
@@ -654,7 +654,7 @@ header nav li:first-child {
 }
 
 .section2_quality-food .container {
-    background-image: url('../img/section-2/qualityFoodFragment.png'), url('../img/section-2/qualityFood.png');
+    background-image: url('../img/section-2/qualityFoodFragment.jpg'), url('../img/section-2/qualityFood.jpg');
     background-repeat: no-repeat, no-repeat;
     background-position: 445px 0px, 15px 40px;
     display: flex;
@@ -970,7 +970,7 @@ header nav li:first-child {
 
 
 .section4_agro-perfect {
-    background:  #f9f9f9 url('../img/bg/second-bg.png') center top no-repeat;
+    background:  #f9f9f9 url('../img/bg/second-bg.jpg') center top no-repeat;
 }
 
 .section4_agro-perfect .container {
@@ -1097,7 +1097,7 @@ header nav li:first-child {
     /* Tasty Cakes */
 
 .container-xxl {
-    background: url('../img/bg/third-bg.png') center top no-repeat;
+    background: url('../img/bg/third-bg.jpg') center top no-repeat;
 } /* Container for the new bg */
 
 .agro-perfect_cakes {
@@ -1298,35 +1298,35 @@ header nav li:first-child {
 }
 
 .imgs-wall_row_item-1 {
-    background: url('../img/section-6/1.png') center no-repeat;
+    background: url('../img/section-6/1.jpg') center no-repeat;
     background-size: cover;
 }
 .imgs-wall_row_item-2 {
-    background: url('../img/section-6/2.png') center no-repeat;
+    background: url('../img/section-6/2.jpg') center no-repeat;
     background-size: cover;
 }
 .imgs-wall_row_item-3 {
-    background: url('../img/section-6/3.png') center no-repeat;
+    background: url('../img/section-6/3.jpg') center no-repeat;
     background-size: cover;
 }
 .imgs-wall_row_item-4 {
-    background: url('../img/section-6/4.png') center no-repeat;
+    background: url('../img/section-6/4.jpg') center no-repeat;
     background-size: cover;
 }
 .imgs-wall_row_item-5 {
-    background: url('../img/section-6/5.png') center no-repeat;
+    background: url('../img/section-6/5.jpg') center no-repeat;
     background-size: cover;
 }
 .imgs-wall_row_item-6 {
-    background: url('../img/section-6/6.png') center no-repeat;
+    background: url('../img/section-6/6.jpg') center no-repeat;
     background-size: cover;
 }
 .imgs-wall_row_item-7 {
-    background: url('../img/section-6/7.png') center no-repeat;
+    background: url('../img/section-6/7.jpg') center no-repeat;
     background-size: cover;
 }
 .imgs-wall_row_item-8 {
-    background: url('../img/section-6/8.png') center no-repeat;
+    background: url('../img/section-6/8.jpg') center no-repeat;
     background-size: cover;
 }
 
@@ -1334,7 +1334,7 @@ header nav li:first-child {
     /* Resp-Section #7: Feedback */ 
 @media (max-width: 500px) {
     main .section7_feedback {
-        background: #25292c url(../img/bg/fourth-bg.png) center bottom no-repeat;
+        background: #25292c url('../img/bg/fourth-bg.jpg') center bottom no-repeat;
     }
     main .section7_feedback .feedback_credentials img:first-of-type {
         margin: 20px 20px 30px 20px;
@@ -1604,17 +1604,17 @@ header nav li:first-child {
 }
 
 .blog_posts .first {
-    background: url('../img/section-8/1.png') center no-repeat;
+    background: url('../img/section-8/1.jpg') center no-repeat;
     background-size: cover;
 }
 
 .blog_posts .second {
-    background: url('../img/section-8/2.png') center no-repeat;
+    background: url('../img/section-8/2.jpg') center no-repeat;
     background-size: cover;
 }
 
 .blog_posts .third {
-    background: url('../img/section-8/3.png') center no-repeat;
+    background: url('../img/section-8/3.jpg') center no-repeat;
     background-size: cover;
 }
 
