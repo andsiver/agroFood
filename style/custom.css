@@ -1423,21 +1423,14 @@ header .container:nth-of-type(2) {
 
 
     /* Resp-Section #7: Feedback */ 
+
 @media (max-width: 500px) {
-    main .section7_feedback {
-        background: #25292c url('../img/bg/fourth-bg.jpg') center bottom no-repeat;
-    }
-    main .section7_feedback .feedback_credentials img:first-of-type {
-        margin: 20px 20px 30px 20px;
-    }
-    main .section7_feedback .feedback_credentials p {
-        padding: 35px 0px 45px 10px;
-    }
-    main .section7_feedback .feedback_credentials img:last-of-type {
-        margin: 30px 50px 30px 20px;
+    .owl-dots {
+        bottom: 20px !important;
+        right: 130px !important;
     }
 }
-       
+        
 @media (max-width: 900px) {
     main .section7_feedback h2 {
         padding-top: 90px;
@@ -1457,12 +1450,15 @@ header .container:nth-of-type(2) {
         text-align: justify;
         transition: 1s;
     }
-    .section7_feedback .feedback_credentials img:last-of-type {
-        margin: 70px 50px 30px 0px;
-        padding: 0;
-    }
     .section7_feedback .feedback_credentials p span {
         display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section7_feedback h2 {
+        padding-top: 90px;
+        transition: 1s;
     }
 }
 
@@ -1471,6 +1467,7 @@ header .container:nth-of-type(2) {
 
 .section7_feedback {
     background: #25292c url('../img/bg/fourth-bg.jpg') center bottom no-repeat;
+    background-size: cover;
     min-height: 714px;
 }
 
@@ -1512,17 +1509,12 @@ header .container:nth-of-type(2) {
 
 .feedback_credentials {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.feedback_credentials img:first-of-type {
+.feedback_credentials img {
     margin: 45px 20px 30px 100px;
-}
-
-.feedback_credentials img:last-of-type {
-    margin: 70px 100px 30px 0px;
-    padding: 0;
 }
 
 .feedback_credentials p {
@@ -1539,6 +1531,37 @@ header .container:nth-of-type(2) {
 
 .feedback_credentials p span {
     font-weight: 700;
+}
+
+/* Owl Carousel Styles Changes */ 
+
+main .owl-carousel .owl-item img {
+    display: block;
+    width: initial;
+}
+
+.owl-carousel {
+    position: relative !important;
+}
+
+.owl-dots {
+    display: flex !important;
+    justify-content: flex-end !important;
+    position: absolute !important;
+    bottom: 90px;
+    right: 85px;
+}
+.owl-dot {
+    margin-right: 11px !important;
+    border: solid 3px #4b4b4c !important;
+    border-radius: 50% !important;
+    background: transparent !important;
+    width: 12px !important;
+    height: 12px !important;
+}
+.owl-dots .active {
+    border: solid 3px #fde557 !important;
+    background: #fde557 !important;
 }
 
 
