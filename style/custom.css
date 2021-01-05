@@ -910,7 +910,7 @@ header .container:nth-of-type(2) {
         line-height: 25px;
     }
     .section4_agro-perfect .agro-perfect_btn button {
-        margin: 30px 0 40px 0;
+        margin: 30px 0 140px 0;
     }
     .section4_agro-perfect .agro-perfect_row .perfect_img {
         width: 100%;
@@ -971,6 +971,9 @@ header .container:nth-of-type(2) {
     }
     .agro-perfect_btn {
         margin: 0 auto;
+    }
+    .section4_agro-perfect .agro-perfect_btn button {
+        margin: 30px 0 120px 0;
     }
 }
 
@@ -1427,7 +1430,7 @@ header .container:nth-of-type(2) {
 @media (max-width: 500px) {
     .owl-dots {
         bottom: 20px !important;
-        right: 130px !important;
+        right: 120px !important;
     }
 }
         
