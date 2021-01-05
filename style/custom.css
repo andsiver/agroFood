@@ -37,6 +37,7 @@
 }
 
 body {
+    overflow-x: hidden;
     background-color: white;
     margin: 0 auto;
     min-width: 320px;
@@ -949,11 +950,9 @@ header .container:nth-of-type(2) {
     }
     .agro-perfect_row .agro-perfect_row-item:nth-of-type(7) {
         order: 8;
-        background-color: rgb(255, 255, 255);
     }
     .agro-perfect_row .agro-perfect_row-item:nth-of-type(8) {
         order: 7;
-        background-color: rgb(255, 255, 255);
     }
     .section4_agro-perfect .agro-perfect_row .agro-perfect_row-item p {
         padding: 0px 25px 30px 25px;
@@ -1004,14 +1003,12 @@ header .container:nth-of-type(2) {
     }
     .agro-perfect_row-item:nth-of-type(5) {
         order: 3;
-        background-color: #f6f6f6;
     }
     .agro-perfect_row-item:nth-of-type(6) {
         order: 4;
     }
     .agro-perfect_row-item:nth-of-type(7) {
         order: 7;
-        background-color: #f6f6f6;
     }
     .agro-perfect_row-item:nth-of-type(8) {
         order: 8;
@@ -1040,9 +1037,14 @@ header .container:nth-of-type(2) {
 
 /* Section #4: Agro Perfect */
 
-
 .section4_agro-perfect {
+    background-color: #f9f9f9;
+}
+
+.section4_agro-perfect .container-xxl:first-of-type {
     background:  #f9f9f9 url('../img/bg/second-bg.jpg') center top no-repeat;
+    background-size: cover;
+    min-height: 693px;
 }
 
 .section4_agro-perfect .container {
@@ -1093,6 +1095,11 @@ header .container:nth-of-type(2) {
     transition: 0.1ms;
 }
 
+.agro-perfect_mozaic {
+    position: relative;
+    top: -110px;
+}
+
 .agro-perfect_row {
     display: flex;
     flex-wrap: wrap;
@@ -1125,8 +1132,22 @@ header .container:nth-of-type(2) {
 
         /* Resp-Tasty Cakes */
 
+@media (max-width: 1200px) {
+    main .section4_agro-perfect .container-xxl:last-of-type {
+        background-position: -400px 0px;
+        transition: 1s;
+    }
+}
+
+@media (max-width: 1000px) {
+    main .section4_agro-perfect .container-xxl:last-of-type {
+        background-position: -600px 0px;
+        transition: 1s;
+    }
+}        
+
 @media (max-width: 800px) {
-    .section4_agro-perfect .container-xxl {
+    main .section4_agro-perfect .container-xxl:last-of-type {
         background-position: -800px 0px;
         transition: 1s;
     }
@@ -1146,7 +1167,7 @@ header .container:nth-of-type(2) {
 }
 
 @media (max-width: 500px) {
-    .section4_agro-perfect .container-xxl {
+    main .section4_agro-perfect .container-xxl:last-of-type {
         background-position: -950px 0px;
         transition: 1s;
     }
@@ -1159,20 +1180,20 @@ header .container:nth-of-type(2) {
         color: #d8bb90;
         font-size: 140px;
         text-shadow: 0px 0px 3px rgb(63, 25, 0);
-        line-height: 100px;
+        line-height: 130px;
         transition: 1s;
     }
 }
 
     /* Tasty Cakes */
 
-.container-xxl {
+.section4_agro-perfect .container-xxl:last-of-type {
     background: url('../img/bg/third-bg.jpg') center top no-repeat;
+    background-size: cover;
 } /* Container for the new bg */
 
 .agro-perfect_cakes {
-    margin-top: 135px;
-    min-height: 680px;
+    min-height: 700px;
     display: flex;
 }
 
